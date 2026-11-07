@@ -209,8 +209,4 @@ export const staffAccounts = [
 
 export const teacher = staffAccounts[0];
 
-const now = new Date();
-const daysAgo = (d) => new Date(now.getTime() - d * 86400000).toISOString();
-const daysFromNow = (d) => new Date(now.getTime() + d * 86400000).toISOString();
-
 export const initialRequests = [];

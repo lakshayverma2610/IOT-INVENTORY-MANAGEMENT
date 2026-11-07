@@ -10,10 +10,8 @@ import {
   ClipboardList,
   CheckCircle,
   Clock,
-  ArrowRight,
   ExternalLink,
   ChevronRight,
-  Calendar,
   AlertCircle
 } from 'lucide-react';
 

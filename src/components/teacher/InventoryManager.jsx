@@ -7,6 +7,68 @@ import { Plus, Pencil, Trash2, Search } from 'lucide-react';
 const categories = ['Microcontroller','Sensor','Communication','Display','Motors & Actuators','Power','Tools','Test Equipment','Drone / UAV','Electronics','Accessories','Prototyping','Cables','Structural','Soldering','Other'];
 const emptyItem = { name: '', category: 'Sensor', type: 'non-consumable', totalStock: 1, availableStock: 1, vendor: '', folio: '', billNo: '', date: '', gst: 18, unitPrice: 0, totalAmount: 0 };
 
+function FormFields({ f, setF }) {
+  return (
+    <div className="space-y-4">
+      <div>
+        <label className="block text-sm font-medium text-slate-700 mb-1.5">Item Name</label>
+        <input value={f.name} onChange={e => setF({...f, name: e.target.value})} required className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+      </div>
+      <div className="grid grid-cols-2 gap-3">
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1.5">Category</label>
+          <select value={f.category} onChange={e => setF({...f, category: e.target.value})} className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400 bg-white">
+            {categories.map(c => <option key={c}>{c}</option>)}
+          </select>
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1.5">Type</label>
+          <select value={f.type} onChange={e => setF({...f, type: e.target.value})} className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400 bg-white">
+            <option value="non-consumable">Non-Consumable</option>
+            <option value="consumable">Consumable</option>
+          </select>
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1.5">Total Stock</label>
+          <input type="number" min={0} value={f.totalStock} onChange={e => setF({...f, totalStock: e.target.value})} required className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1.5">Available Stock</label>
+          <input type="number" min={0} value={f.availableStock} onChange={e => setF({...f, availableStock: e.target.value})} required className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1.5">Vendor</label>
+          <input value={f.vendor || ''} onChange={e => setF({...f, vendor: e.target.value})} className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1.5">Bill No.</label>
+          <input value={f.billNo || ''} onChange={e => setF({...f, billNo: e.target.value})} className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1.5">Folio</label>
+          <input value={f.folio || ''} onChange={e => setF({...f, folio: e.target.value})} className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-slate-700 mb-1.5">Date</label>
+          <input value={f.date || ''} onChange={e => setF({...f, date: e.target.value})} placeholder="DD/MM/YY" className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+        </div>
+      </div>
+      {f.type === 'consumable' && (
+        <div className="grid grid-cols-2 gap-3">
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-1.5">Unit Price (Rs.)</label>
+            <input type="number" min={0} value={f.unitPrice || 0} onChange={e => setF({...f, unitPrice: e.target.value})} className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-1.5">GST %</label>
+            <input type="number" min={0} value={f.gst || 18} onChange={e => setF({...f, gst: e.target.value})} className="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-blue-400" />
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function InventoryManager() {
   const { items, updateItem, addItem, deleteItem } = useInventory();
   const [search, setSearch] = useState('');
