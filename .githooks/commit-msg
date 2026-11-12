@@ -1,0 +1,33 @@
+#!/bin/sh
+# .githooks/commit-msg
+# Validates commit message length (>= 10 chars) and prefix (feat:, fix:, docs:, refactor:, chore:)
+
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE" | head -n 1)
+
+echo "🔍 Running commit-msg hook: Validating commit message format..."
+
+# 1. Check length
+MSG_LEN=${#COMMIT_MSG}
+if [ "$MSG_LEN" -lt 10 ]; then
+  echo "❌ Error: Commit message is too short ($MSG_LEN characters). Minimum required is 10 characters."
+  echo "👉 Commit message received: \"$COMMIT_MSG\""
+  exit 1
+fi
+
+# 2. Check prefix (Conventional Commits)
+VALID_PREFIX_REGEX="^(feat:|fix:|docs:|refactor:|chore:)[[:space:]].+"
+
+if ! echo "$COMMIT_MSG" | grep -E "$VALID_PREFIX_REGEX" > /dev/null 2>&1; then
+  echo "❌ Error: Commit message must start with one of the following prefixes followed by a space:"
+  echo "   - feat: <description>"
+  echo "   - fix: <description>"
+  echo "   - docs: <description>"
+  echo "   - refactor: <description>"
+  echo "   - chore: <description>"
+  echo "👉 Commit message received: \"$COMMIT_MSG\""
+  exit 1
+fi
+
+echo "✅ Commit-msg check passed: Conventional prefix and length verified."
+exit 0

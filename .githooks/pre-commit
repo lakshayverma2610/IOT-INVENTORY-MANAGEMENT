@@ -1,0 +1,32 @@
+#!/bin/sh
+# .githooks/pre-commit
+# Rejects commit if any staged file (outside .githooks) contains TODO or FIXME
+
+echo "🔍 Running pre-commit hook: Checking for TODO or FIXME in staged files..."
+
+# Check only added/modified staged files, ignoring .githooks scripts themselves
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -v "^\.githooks/")
+
+if [ -z "$STAGED_FILES" ]; then
+  echo "✅ Pre-commit check passed: No candidate staged files to scan."
+  exit 0
+fi
+
+FOUND_FLAGS=0
+
+for FILE in $STAGED_FILES; do
+  # Check staged content for whole word TODO or FIXME
+  if git show ":$FILE" | grep -E -n "\b(TODO|FIXME)\b" > /dev/null 2>&1; then
+    echo "❌ Error: Commit rejected! Staged file '$FILE' contains forbidden markers (TODO or FIXME):"
+    git show ":$FILE" | grep -E -n --color=always "\b(TODO|FIXME)\b"
+    FOUND_FLAGS=1
+  fi
+done
+
+if [ $FOUND_FLAGS -ne 0 ]; then
+  echo "🚫 Aborting commit. Please resolve or remove all TODO / FIXME comments before committing."
+  exit 1
+fi
+
+echo "✅ Pre-commit check passed: No TODO or FIXME found."
+exit 0
