@@ -41,8 +41,9 @@ export default function ItemCatalog() {
 
   const filtered = typeItems.filter(i => {
     const matchCat = category === 'All' || i.category === category;
-    const matchSearch = i.name.toLowerCase().includes(search.toLowerCase()) ||
-      i.vendor.toLowerCase().includes(search.toLowerCase());
+    const cleanSearch = search.toLowerCase().trim();
+    const matchSearch = i.name.toLowerCase().includes(cleanSearch) ||
+      (i.vendor || '').toLowerCase().includes(cleanSearch);
     return matchCat && matchSearch;
   });
 
