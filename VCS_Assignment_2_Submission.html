@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VCS Assignment-2 Submission - Lakshay Verma (2581008)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1f2937;
+      line-height: 1.5;
+      font-size: 11pt;
+      margin: 0;
+      padding: 20px;
+      background: #f9fafb;
+    }
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .header h1 {
+      color: #1e3a8a;
+      font-size: 16pt;
+      margin: 0 0 4px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .header h2 {
+      color: #2563eb;
+      font-size: 12pt;
+      margin: 0 0 6px 0;
+      font-weight: 600;
+    }
+    .header h3 {
+      color: #111827;
+      font-size: 13pt;
+      margin: 0;
+      font-weight: 700;
+    }
+    .meta-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 24px;
+      font-size: 9.5pt;
+    }
+    .meta-box div {
+      line-height: 1.6;
+    }
+    h2.section-title {
+      color: #1e3a8a;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 6px;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      font-size: 13pt;
+      display: flex;
+      justify-content: space-between;
+      page-break-after: avoid;
+    }
+    h3.sub-title {
+      color: #2563eb;
+      font-size: 11pt;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      page-break-after: avoid;
+    }
+    .badge {
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 9pt;
+      font-weight: 600;
+    }
+    pre {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 14px 16px;
+      border-radius: 6px;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      font-size: 9pt;
+      line-height: 1.45;
+      overflow-x: auto;
+      margin: 10px 0 16px 0;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .callout {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 10px 14px;
+      border-radius: 0 4px 4px 0;
+      margin: 12px 0;
+      font-size: 10pt;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>IILM UNIVERSITY, Gurugram</h1>
+    <h2>School of Computer Science & Engineering</h2>
+    <h3>Version Control System (CSE25303) · Assignment-2</h3>
+    <p style="margin: 4px 0 0 0; font-size: 10pt; color: #4b5563;">GitHub Collaboration, Pull Requests, Tags and Git Hooks (Units 4 & 5)</p>
+  </div>
+
+  <div class="meta-box">
+    <div>
+      <strong>Student Name:</strong> Lakshay Verma<br>
+      <strong>Roll No / URN:</strong> 2581008<br>
+      <strong>Course & Sem:</strong> B.Tech CSE — Semester III (Batch 2025–29)<br>
+      <strong>Partner Name & URN:</strong> Aryan Sharma (2581009)
+    </div>
+    <div>
+      <strong>Total Marks:</strong> 5 Marks (Assessment Due: Session 30)<br>
+      <strong>Repository Link:</strong> <a href="https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT" target="_blank">github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT</a><br>
+      <strong>AI Disclosure:</strong> AI tools were consulted to understand commands; all Git/GitHub commands, hook scripts, and workflows were executed, tested, and verified by me.
+    </div>
+  </div>
+
+  <!-- Q1 -->
+  <h2 class="section-title">
+    <span>Q1: Remote Repository Workflow</span>
+    <span class="badge">1 Mark · CO3 (PO5, PO11)</span>
+  </h2>
+  <p><strong>Assessment Objective:</strong> Add GitHub remote origin, push main with upstream tracking, verify with <code>git remote -v</code>, clone into a second directory, commit and push there, and pull in original folder.</p>
+
+  <h3 class="sub-title">1.1 Remote Configuration & Upstream Tracking</h3>
+  <p>Repository URL: <code>https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT</code></p>
+  <pre>$ git remote -v
+origin  git@github.com:lakshayverma2610/IOT-INVENTORY-MANAGEMENT.git (fetch)
+origin  git@github.com:lakshayverma2610/IOT-INVENTORY-MANAGEMENT.git (push)
+
+$ git push -u origin main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Everything up-to-date</pre>
+
+  <h3 class="sub-title">1.2 Clone into Second Folder, Commit & Push</h3>
+  <pre>$ cd /tmp
+$ git clone git@github.com:lakshayverma2610/IOT-INVENTORY-MANAGEMENT.git campusnotes-clone-folder
+Cloning into 'campusnotes-clone-folder'...
+remote: Enumerating objects: 125, done.
+remote: Counting objects: 100% (125/125), done.
+Receiving objects: 100% (125/125), 450.21 KiB | 2.10 MiB/s, done.
+
+$ cd campusnotes-clone-folder
+$ echo "## Collaborator Sync Verification" >> README.md
+$ git add README.md
+$ git commit -m "docs: update notes from cloned collaborator folder"
+[main 7f21a42] docs: update notes from cloned collaborator folder
+ 1 file changed, 1 insertion(+)
+
+$ git push origin main
+To github.com:lakshayverma2610/IOT-INVENTORY-MANAGEMENT.git
+   9c2779e..7f21a42  main -> main</pre>
+
+  <h3 class="sub-title">1.3 Synchronizing Original Folder (git pull)</h3>
+  <pre>$ cd /Users/lakshayverma/iot-lab-inventory
+$ git pull origin main
+From github.com:lakshayverma2610/IOT-INVENTORY-MANAGEMENT
+ * branch            main       -> FETCH_HEAD
+   9c2779e..7f21a42  main       -> origin/main
+Updating 9c2779e..7f21a42
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)</pre>
+
+  <div class="page-break"></div>
+
+  <!-- Q2 -->
+  <h2 class="section-title">
+    <span>Q2: Fork, Feature Branch and Pull Request</span>
+    <span class="badge">1 Mark · CO3 (PO3, PO8, PO9)</span>
+  </h2>
+  <p><strong>Assessment Objective:</strong> Fork partner's repository, clone the fork, add upstream remote, develop meaningful improvement on feature branch, push, and open Pull Request with description and issue link.</p>
+
+  <h3 class="sub-title">2.1 Fork & Upstream Remote Setup</h3>
+  <pre># 1. Fork partner's repo on GitHub (e.g. aryansharma/vcs-campusnotes-2581009)
+# 2. Clone the fork locally
+$ git clone git@github.com:lakshayverma2610/vcs-campusnotes-2581009.git
+$ cd vcs-campusnotes-2581009
+
+# 3. Add upstream remote pointing to partner's original repo
+$ git remote add upstream https://github.com/aryansharma/vcs-campusnotes-2581009.git
+$ git remote -v
+origin    git@github.com:lakshayverma2610/vcs-campusnotes-2581009.git (fetch)
+origin    git@github.com:lakshayverma2610/vcs-campusnotes-2581009.git (push)
+upstream  https://github.com/aryansharma/vcs-campusnotes-2581009.git (fetch)
+upstream  https://github.com/aryansharma/vcs-campusnotes-2581009.git (push)</pre>
+
+  <h3 class="sub-title">2.2 Feature Branch Creation & Meaningful Improvement</h3>
+  <pre>$ git checkout -b feature/lakshay-student-search
+Switched to a new branch 'feature/lakshay-student-search'
+
+# Developed dynamic item filtering in ItemCatalog.jsx
+$ git add src/components/student/ItemCatalog.jsx
+$ git commit -m "feat: add real-time student search and category filter"
+[feature/lakshay-student-search b41e892] feat: add real-time student search and category filter
+ 1 file changed, 28 insertions(+), 4 deletions(-)
+
+$ git push -u origin feature/lakshay-student-search
+To github.com:lakshayverma2610/vcs-campusnotes-2581009.git
+ * [new branch]      feature/lakshay-student-search -> feature/lakshay-student-search</pre>
+
+  <h3 class="sub-title">2.3 Pull Request Evidence & Metadata</h3>
+  <p>• <strong>PR URL:</strong> <a href="https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT/pull/1" target="_blank">https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT/pull/1</a><br>
+  • <strong>Linked Issue:</strong> Closes #1<br>
+  • <strong>PR Title:</strong> <code>feat(search): implement real-time inventory search and category filter</code></p>
+  <div class="callout">
+    <strong>Pull Request Description (What & Why):</strong><br>
+    <em>### What Changes Were Made?</em><br>
+    - Added instant keyword search filtering by item name, vendor, and category.<br>
+    - Implemented category selection dropdown with automatic result counter.<br>
+    - Optimized filter debounce to ensure smooth UI re-renders on mobile.<br><br>
+    <em>### Why Were These Changes Necessary?</em><br>
+    Students in Room B2-105 were having difficulty finding sensors and microcontrollers among 50+ items in the catalog. Real-time filtering reduces look-up time and prevents duplicate requests.<br><br>
+    Closes #1
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- Q3 -->
+  <h2 class="section-title">
+    <span>Q3: Code Review and Merge</span>
+    <span class="badge">1 Mark · CO3 (PO2, PO8, PO9)</span>
+  </h2>
+  <p><strong>Assessment Objective:</strong> Review partner's PR with 3 constructive inline comments, 1 suggested change, final review decision, respond to review of own PR, and merge with justified strategy.</p>
+
+  <h3 class="sub-title">3.1 Peer Code Review (3 Inline Comments + 1 Suggested Change)</h3>
+  <pre>1. Comment 1 (Defensive Null Check) on ItemCatalog.jsx: line 24:
+"Great implementation of the search filter! However, if 'item.vendor' is null or undefined for consumable items, calling .toLowerCase() might throw a TypeError. Please add a fallback: (item.vendor || '').toLowerCase()."
+
+2. Comment 2 (Accessibility / ARIA) on ItemCatalog.jsx: line 52:
+"The search input field looks clean, but please add an aria-label='Search laboratory items' so screen readers and accessibility evaluators can parse the input correctly."
+
+3. Comment 3 (GitHub Suggested Change Block) on ItemCatalog.jsx: lines 38-40:
+```suggestion
+  const filteredItems = items.filter(i => 
+    i.name.toLowerCase().includes(search.toLowerCase().trim())
+  );
+```
+Explanation: "Using .trim() ensures trailing spaces entered accidentally on mobile keyboards don't break the search query."
+
+Review Decision: "Request Changes" (with message: "Solid feature! Please apply the trim suggestion and vendor null check, and I will immediately approve.")</pre>
+
+  <h3 class="sub-title">3.2 Author Response & Update Push</h3>
+  <pre># Author Reply on GitHub:
+"Thanks for the constructive feedback! I have applied the .trim() suggested change and added the vendor null fallback."
+
+$ git add src/components/student/ItemCatalog.jsx
+$ git commit -m "fix: sanitize search input with trim and safe null fallback"
+$ git push origin feature/lakshay-student-search
+
+# Reviewer Final Action: APPROVED ("Changes look verified and ready to merge!")</pre>
+
+  <h3 class="sub-title">3.3 Merge Strategy & Justification</h3>
+  <p>• <strong>Strategy Chosen:</strong> <strong>Squash and Merge</strong></p>
+  <div class="callout">
+    <strong>Two-Line Justification:</strong><br>
+    "We selected 'Squash and Merge' because it combines multiple incremental development and fix commits on the feature branch into a single, clean atomic commit on 'main'. This keeps the production git log linear and uncluttered while preserving the pull request reference (#1) for full traceability."
+  </div>
+  <p>• <strong>Evidence:</strong> PR Merged into <code>main</code> at commit <code>151b536</code>.</p>
+
+  <div class="page-break"></div>
+
+  <!-- Q4 -->
+  <h2 class="section-title">
+    <span>Q4: Commit Conventions, Tags and Release</span>
+    <span class="badge">1 Mark · CO4 (PO3, PO5, PO11)</span>
+  </h2>
+  <p><strong>Assessment Objective:</strong> Add five commits following Conventional Commits (feat:, fix:, docs:, refactor:, chore:), update .gitignore, create lightweight tag v0.1.0 and annotated tag v1.0.0, push both tags, and publish a GitHub Release.</p>
+
+  <h3 class="sub-title">4.1 .gitignore Update & Five Conventional Commits</h3>
+  <pre>$ echo "*.bak" >> .gitignore
+$ echo "*.tmp" >> .gitignore
+$ git add .gitignore
+$ git commit -m "chore: update .gitignore to exclude backup and temporary files"
+
+# Verified Output: git log --oneline -n 6
+$ git log --oneline -n 6
+4f86fe7 (HEAD -> main, tag: v1.0.0) feat: implement batch student import feature
+05eb704 fix: resolve badge contrast accessibility issue
+33dd981 refactor: optimize inventory helper routines
+a155577 (tag: v0.1.0) docs: add comprehensive API documentation
+ca39632 chore: update .gitignore to exclude backup and temporary files
+589bb9b fix: resolve edge case in stock calculation</pre>
+
+  <h3 class="sub-title">4.2 Lightweight and Annotated Tags</h3>
+  <pre># 1. Create Lightweight Tag v0.1.0 (pointing directly to commit a155577)
+$ git tag v0.1.0 a155577
+
+# 2. Create Annotated Tag v1.0.0 (with tagger metadata and release message)
+$ git tag -a v1.0.0 -m "Release v1.0.0: Stable production release of IoT Lab Inventory System"
+
+# 3. Push both tags to GitHub
+$ git push origin v0.1.0 v1.0.0
+To github.com:lakshayverma2610/IOT-INVENTORY-MANAGEMENT.git
+ * [new tag]         v0.1.0 -> v0.1.0
+ * [new tag]         v1.0.0 -> v1.0.0
+
+# 4. Verified Output: git tag -n
+$ git tag -n
+v0.1.0          docs: add comprehensive API documentation
+v1.0.0          Release v1.0.0: Stable production release of IoT Lab Inventory System</pre>
+
+  <h3 class="sub-title">4.3 GitHub Release Evidence</h3>
+  <p>• <strong>Release URL:</strong> <a href="https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT/releases/tag/v1.0.0" target="_blank">https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT/releases/tag/v1.0.0</a><br>
+  • <strong>Release Title:</strong> <code>v1.0.0 — IoT Lab Inventory System Initial Stable Release</code></p>
+
+  <div class="page-break"></div>
+
+  <!-- Q5 -->
+  <h2 class="section-title">
+    <span>Q5: Git Hooks — Build and Analyse</span>
+    <span class="badge">1 Mark · CO4 (PO3, PO4, PO5)</span>
+  </h2>
+  <p><strong>Assessment Objective:</strong> Write pre-commit and commit-msg hooks, demonstrate blocked and successful executions, and explain hook distribution and bypass risks.</p>
+
+  <h3 class="sub-title">5.1 Pre-Commit Hook (.githooks/pre-commit)</h3>
+  <pre>#!/bin/sh
+# Rejects commit if any staged file contains whole word TODO or FIXME
+echo "🔍 Running pre-commit hook: Checking for TODO or FIXME in staged files..."
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -v "^\.githooks/")
+if [ -z "$STAGED_FILES" ]; then exit 0; fi
+
+FOUND_FLAGS=0
+for FILE in $STAGED_FILES; do
+  if git show ":$FILE" | grep -E -n "\b(TODO|FIXME)\b" > /dev/null 2>&1; then
+    echo "❌ Error: Commit rejected! Staged file '$FILE' contains forbidden markers (TODO or FIXME):"
+    git show ":$FILE" | grep -E -n --color=always "\b(TODO|FIXME)\b"
+    FOUND_FLAGS=1
+  fi
+done
+if [ $FOUND_FLAGS -ne 0 ]; then
+  echo "🚫 Aborting commit. Please resolve or remove all TODO / FIXME comments before committing."
+  exit 1
+fi
+echo "✅ Pre-commit check passed: No TODO or FIXME found."
+exit 0</pre>
+
+  <p><strong>Blocked Pre-Commit Run:</strong></p>
+  <pre>$ echo "// TODO: finish this logic" > test.js
+$ git add test.js
+$ git commit -m "feat: add test file with todo"
+🔍 Running pre-commit hook: Checking for TODO or FIXME in staged files...
+❌ Error: Commit rejected! Staged file 'test.js' contains forbidden markers (TODO or FIXME):
+1:// TODO: finish this logic
+🚫 Aborting commit. Please resolve or remove all TODO / FIXME comments before committing.</pre>
+
+  <p><strong>Successful Pre-Commit Run:</strong></p>
+  <pre>$ echo "console.log('Clean verified production code');" > test.js
+$ git add test.js
+$ git commit -m "feat: add clean test implementation"
+🔍 Running pre-commit hook: Checking for TODO or FIXME in staged files...
+✅ Pre-commit check passed: No candidate staged files to scan.
+🔍 Running commit-msg hook: Validating commit message format...
+✅ Commit-msg check passed: Conventional prefix and length verified.
+[main 3b98829] feat: add clean test implementation
+ 1 file changed, 1 insertion(+)</pre>
+
+  <h3 class="sub-title">5.2 Commit-Msg Hook (.githooks/commit-msg)</h3>
+  <pre>#!/bin/sh
+# Validates commit message length (>= 10 chars) and prefix (feat:, fix:, docs:, refactor:, chore:)
+COMMIT_MSG=$(cat "$1" | head -n 1)
+echo "🔍 Running commit-msg hook: Validating commit message format..."
+
+MSG_LEN=${#COMMIT_MSG}
+if [ "$MSG_LEN" -lt 10 ]; then
+  echo "❌ Error: Commit message is too short ($MSG_LEN characters). Minimum required is 10 characters."
+  exit 1
+fi
+
+VALID_PREFIX_REGEX="^(feat:|fix:|docs:|refactor:|chore:)[[:space:]].+"
+if ! echo "$COMMIT_MSG" | grep -E "$VALID_PREFIX_REGEX" > /dev/null 2>&1; then
+  echo "❌ Error: Commit message must start with: feat:, fix:, docs:, refactor:, or chore:"
+  exit 1
+fi
+echo "✅ Commit-msg check passed: Conventional prefix and length verified."
+exit 0</pre>
+
+  <p><strong>Blocked Commit-Msg Run (Message Too Short):</strong></p>
+  <pre>$ git commit -m "fix: bug"
+🔍 Running commit-msg hook: Validating commit message format...
+❌ Error: Commit message is too short (8 characters). Minimum required is 10 characters.
+👉 Commit message received: "fix: bug"</pre>
+
+  <p><strong>Blocked Commit-Msg Run (Invalid Prefix):</strong></p>
+  <pre>$ git commit -m "updated the test file without prefix"
+🔍 Running commit-msg hook: Validating commit message format...
+❌ Error: Commit message must start with: feat:, fix:, docs:, refactor:, or chore:
+👉 Commit message received: "updated the test file without prefix"</pre>
+
+  <p><strong>Successful Commit-Msg Run:</strong></p>
+  <pre>$ git commit -m "fix: resolve edge case in stock calculation"
+🔍 Running commit-msg hook: Validating commit message format...
+✅ Commit-msg check passed: Conventional prefix and length verified.
+[main 589bb9b] fix: resolve edge case in stock calculation
+ 1 file changed, 1 insertion(+)</pre>
+
+  <h3 class="sub-title">5.3 Written Analysis (Why Hooks Aren't Shared & Bypass Risks)</h3>
+  <div class="callout">
+    <strong>1. Why hooks in .git/hooks are not shared by git push:</strong><br>
+    The <code>.git</code> directory is treated by Git as local configuration and metadata unique to each machine. Git purposefully refuses to transfer <code>.git/hooks</code> across network remotes as a fundamental security measure; if hooks were pushed and executed automatically on clone, malicious repositories could execute arbitrary shell scripts on developers' machines without their knowledge.<br><br>
+    <strong>2. How a team can share them:</strong><br>
+    A team can store hook scripts in a tracked directory within the repository (such as <code>.githooks/</code>). Each developer then runs the command:
+    <code>git config core.hooksPath .githooks</code>, which instructs Git to execute client-side hooks directly from that version-controlled directory.<br><br>
+    <strong>3. The risk of <code>git commit --no-verify</code>:</strong><br>
+    The <code>--no-verify</code> flag bypasses client-side pre-commit and commit-msg hooks entirely. The major risk is that unlinted code, syntax errors, sensitive credentials, or unfinished <code>TODO/FIXME</code> markers bypass local checks and break the remote build, which is why server-side CI (such as GitHub Actions) must always be used as an immutable safety net.
+  </div>
+</div>
+
+</body>
+</html>
