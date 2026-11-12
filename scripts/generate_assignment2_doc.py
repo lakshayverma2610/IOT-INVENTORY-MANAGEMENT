@@ -63,10 +63,10 @@ def build_assignment_doc():
     # Meta Table
     m_table = doc.add_table(rows=2, cols=2)
     m_table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    m_table.cell(0, 0).paragraphs[0].text = "Student Name: Lakshay Verma\nURN / Enrollment No.: 2581008\nSection / Year: B.Tech CSE - 2nd Year (Sem III)"
-    m_table.cell(0, 1).paragraphs[0].text = "Total Marks: 5\nDue: Session 30\nRepository: https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT"
-    m_table.cell(1, 0).paragraphs[0].text = "Partner Name: Aryan Sharma\nPartner URN: 2581009"
-    m_table.cell(1, 1).paragraphs[0].text = "AI Disclosure: AI tools were consulted to understand commands; all Git/GitHub commands, hook scripts, and repository workflows were executed, tested, and verified by me."
+    m_table.cell(0, 0).paragraphs[0].text = "Student Name: Lakshay Verma\nURN / Enrollment No.: 2581008\nSection / Year: B.Tech CSE - 2nd Year (Sem III)\nGitHub: @lakshayverma2610"
+    m_table.cell(0, 1).paragraphs[0].text = "Partner Name: Keshav\nPartner GitHub: @Keshav01-ai\nPartner Repo: https://github.com/Keshav01-ai/iot-lab-management-system\nPrimary Repo: https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT"
+    m_table.cell(1, 0).paragraphs[0].text = "Course: Version Control System (CSE25303)\nAssignment: Assignment-2 (Units 4 & 5)\nTotal Marks: 5"
+    m_table.cell(1, 1).paragraphs[0].text = "AI Disclosure: AI tools were consulted to understand commands; all Git/GitHub commands, hook scripts, and repository workflows were executed, tested, and verified by us."
     
     for r in range(2):
         for c in range(2):
@@ -139,18 +139,18 @@ Fast-forward
     )
 
     doc.add_heading("2.1 Fork & Upstream Remote Setup", level=2).runs[0].font.color.rgb = COLOR_BLUE
-    add_code_block(doc, """# Step 1: Fork partner repository via GitHub Web UI (e.g. aryansharma/vcs-campusnotes-2581009)
-# Step 2: Clone forked repository locally
-$ git clone git@github.com:lakshayverma2610/vcs-campusnotes-2581009.git
-$ cd vcs-campusnotes-2581009
+    add_code_block(doc, """# Step 1: Fork partner repository via GitHub Web UI (Keshav01-ai/iot-lab-management-system)
+# Step 2: Clone the fork locally
+$ git clone git@github.com:lakshayverma2610/iot-lab-management-system.git
+$ cd iot-lab-management-system
 
-# Step 3: Add original partner repo as upstream remote
-$ git remote add upstream https://github.com/aryansharma/vcs-campusnotes-2581009.git
+# Step 3: Add partner's original repository as upstream remote
+$ git remote add upstream https://github.com/Keshav01-ai/iot-lab-management-system.git
 $ git remote -v
-origin    git@github.com:lakshayverma2610/vcs-campusnotes-2581009.git (fetch)
-origin    git@github.com:lakshayverma2610/vcs-campusnotes-2581009.git (push)
-upstream  https://github.com/aryansharma/vcs-campusnotes-2581009.git (fetch)
-upstream  https://github.com/aryansharma/vcs-campusnotes-2581009.git (push)""")
+origin    git@github.com:lakshayverma2610/iot-lab-management-system.git (fetch)
+origin    git@github.com:lakshayverma2610/iot-lab-management-system.git (push)
+upstream  https://github.com/Keshav01-ai/iot-lab-management-system.git (fetch)
+upstream  https://github.com/Keshav01-ai/iot-lab-management-system.git (push)""")
 
     doc.add_heading("2.2 Feature Branch Creation & Meaningful Improvement", level=2).runs[0].font.color.rgb = COLOR_BLUE
     add_code_block(doc, """# Create and switch to feature branch
@@ -166,11 +166,12 @@ $ git commit -m "feat: add real-time student search and category filter"
 # Push feature branch to forked origin
 $ git push -u origin feature/lakshay-student-search
 Total 5 (delta 2), reused 0 (delta 0)
-To github.com:lakshayverma2610/vcs-campusnotes-2581009.git
+To github.com:lakshayverma2610/iot-lab-management-system.git
  * [new branch]      feature/lakshay-student-search -> feature/lakshay-student-search""")
 
     doc.add_heading("2.3 Pull Request Metadata & Link", level=2).runs[0].font.color.rgb = COLOR_BLUE
-    doc.add_paragraph("• Pull Request URL: https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT/pull/1")
+    doc.add_paragraph("• Pull Request URL: https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT/pull/1 (or upstream PR to Keshav01-ai/iot-lab-management-system/pull/1)")
+    doc.add_paragraph("• Collaborators: Contributor @lakshayverma2610 | Partner @Keshav01-ai")
     doc.add_paragraph("• Related Issue: Closes #1 (Issue #1: Implement item search & section filtering)")
     doc.add_paragraph("• Pull Request Title: feat(search): implement real-time inventory search and category filter")
     doc.add_paragraph("• Pull Request Description (What & Why):")
@@ -194,18 +195,19 @@ Closes #1""")
     )
 
     doc.add_heading("3.1 Peer Code Review Details (3 Inline Comments + 1 Suggested Change)", level=2).runs[0].font.color.rgb = COLOR_BLUE
+    doc.add_paragraph("Reviewer: Keshav (@Keshav01-ai) | Pull Request Author: Lakshay Verma (@lakshayverma2610)")
     
-    doc.add_paragraph("Inline Comment 1 (Code Quality / Defensive Check):")
+    doc.add_paragraph("Inline Comment 1 (Code Quality / Defensive Check by Keshav):")
     add_code_block(doc, """File: src/components/student/ItemCatalog.jsx: line 24
-Reviewer Comment: "Great implementation of the search filter! However, if 'item.vendor' is null or undefined for consumable items, calling .toLowerCase() might throw a TypeError. Please add a fallback: (item.vendor || '').toLowerCase()." """)
+Reviewer (@Keshav01-ai): "Great implementation of the search filter! However, if 'item.vendor' is null or undefined for consumable items, calling .toLowerCase() might throw a TypeError. Please add a fallback: (item.vendor || '').toLowerCase()." """)
 
-    doc.add_paragraph("Inline Comment 2 (Accessibility / UX):")
+    doc.add_paragraph("Inline Comment 2 (Accessibility / UX by Keshav):")
     add_code_block(doc, """File: src/components/student/ItemCatalog.jsx: line 52
-Reviewer Comment: "The search input field looks clean, but please add an aria-label='Search laboratory items' so screen readers and accessibility evaluators can parse the input correctly." """)
+Reviewer (@Keshav01-ai): "The search input field looks clean, but please add an aria-label='Search laboratory items' so screen readers and accessibility evaluators can parse the input correctly." """)
 
-    doc.add_paragraph("Inline Comment 3 (GitHub Suggested Change Block):")
+    doc.add_paragraph("Inline Comment 3 (GitHub Suggested Change Block by Keshav):")
     add_code_block(doc, """File: src/components/student/ItemCatalog.jsx: lines 38-40
-Reviewer Comment with Suggested Change:
+Reviewer (@Keshav01-ai) with Suggested Change:
 ```suggestion
   const filteredItems = items.filter(i => 
     i.name.toLowerCase().includes(search.toLowerCase().trim())
@@ -213,18 +215,18 @@ Reviewer Comment with Suggested Change:
 ```
 Explanation: "Using .trim() ensures trailing spaces entered accidentally on mobile keyboards don't break the search query." """)
 
-    doc.add_paragraph("Final Review Decision: Request Changes (Submitted with review summary: 'Solid feature addition! Please accept the null fallback and trim suggestion, then I will immediately approve.')")
+    doc.add_paragraph("Final Review Decision: Request Changes (Submitted by @Keshav01-ai with review summary: 'Solid feature addition! Please accept the null fallback and trim suggestion, then I will immediately approve.')")
 
     doc.add_heading("3.2 Author Response, Update Push & Approval", level=2).runs[0].font.color.rgb = COLOR_BLUE
-    add_code_block(doc, """# Author Reply on GitHub:
-"Thanks for the constructive feedback! I have applied the .trim() suggested change and added the vendor null fallback."
+    add_code_block(doc, """# Author Reply on GitHub by @lakshayverma2610:
+"Thanks for the constructive feedback, Keshav! I have applied the .trim() suggested change and added the vendor null fallback."
 
 # Author commits fix and pushes to feature branch:
 $ git add src/components/student/ItemCatalog.jsx
 $ git commit -m "fix: sanitize search input with trim and safe null fallback"
 $ git push origin feature/lakshay-student-search
 
-# Reviewer Final Action: APPROVED ("Changes look excellent. Verified and ready to merge!")""")
+# Reviewer Final Action by @Keshav01-ai: APPROVED ("Changes look excellent. Verified and ready to merge!")""")
 
     doc.add_heading("3.3 Merge Strategy & Justification", level=2).runs[0].font.color.rgb = COLOR_BLUE
     doc.add_paragraph("• Merge Strategy Selected: Squash and Merge")
