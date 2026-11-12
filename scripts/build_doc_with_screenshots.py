@@ -104,7 +104,7 @@ def build_complete_doc():
     doc.add_paragraph("Assessment Objective: Fork partner's repository, configure upstream remote, develop isolated feature on feature branch, and submit structured Pull Request linked to an issue.")
     
     add_screenshot_image(doc, "screenshots/q2_fork_branch.png", "Terminal Screenshot: git remote -v with upstream and feature branch push")
-    add_screenshot_image(doc, "screenshots/q2_github_pr_ui.png", "GitHub UI Screenshot: Pull Request #1 opened by Keshav01-ai on IOT-INVENTORY-MANAGEMENT")
+    add_screenshot_image(doc, "screenshots/q2_real_github_pr.png", "GitHub UI Screenshot: Pull Request #1 opened on lakshayverma2610/IOT-INVENTORY-MANAGEMENT")
 
     doc.add_paragraph("Pull Request Details & Evidence:")
     doc.add_paragraph("• Pull Request URL: https://github.com/lakshayverma2610/IOT-INVENTORY-MANAGEMENT/pull/1")
@@ -162,3 +162,4 @@ def build_complete_doc():
     print(f"Saved complete doc with screenshots to {doc_out}")
 
 build_complete_doc()
+

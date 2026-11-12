@@ -181,10 +181,10 @@ html_content = """<!DOCTYPE html>
   <p><strong>Assessment Objective:</strong> Fork partner's repository, clone fork, add upstream remote, develop isolated feature on feature branch, push, and open Pull Request with description and issue link.</p>
 
   <img class="screenshot-img" src="screenshots/q2_fork_branch.png" alt="Terminal feature branch creation and push">
-  <div class="caption">Figure 2.1: macOS Terminal screenshot showing upstream remote configuration and feature branch creation (feature/lakshay-student-search)</div>
+  <div class="caption">Figure 2.1: macOS Terminal screenshot showing upstream remote configuration and feature branch creation (feature/keshav-search-filter)</div>
 
-  <img class="screenshot-img" src="screenshots/q2_github_pr_ui.png" alt="GitHub UI Pull Request">
-  <div class="caption">Figure 2.2: GitHub UI screenshot of Pull Request #1 with structured description, What & Why rationale, and issue link (Closes #1)</div>
+  <img class="screenshot-img" src="screenshots/q2_real_github_pr.png" alt="GitHub UI Pull Request">
+  <div class="caption">Figure 2.2: Actual GitHub UI screenshot of Pull Request #1 with structured description, What & Why rationale, and issue link (Closes #1)</div>
 
   <div class="callout">
     <strong>Pull Request Metadata:</strong><br>
@@ -281,3 +281,4 @@ cmd = [
 ]
 subprocess.run(cmd, check=True)
 print("PDF with embedded screenshots generated successfully!")
+
