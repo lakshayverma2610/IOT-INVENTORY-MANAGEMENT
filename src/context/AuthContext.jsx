@@ -5,19 +5,22 @@ import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
 const AuthContext = createContext(null);
 
-const STORAGE_KEY_STUDENTS = 'iilm_iot_students_v3';
-const STORAGE_KEY_STAFF = 'iilm_iot_staff_v3';
-const STORAGE_KEY_SESSION = 'iilm_iot_session_v3';
+const STORAGE_KEY_STUDENTS = 'iilm_iot_students_v4';
+const STORAGE_KEY_STAFF = 'iilm_iot_staff_v4';
+const STORAGE_KEY_SESSION = 'iilm_iot_session_v4';
 
 // Known accepted initial passwords for faculty accounts
 const ACCEPTED_STAFF_PASSWORDS = {
   'puja.acharya@iilm.edu': ['Puja@IILM2025', 'puja123', 'iilm123', 'teacher123', '123456'],
   'vardaan.pajnoo@iilm.edu': ['Vardaan@IILM2025', 'vardaan123', 'iilm123', '123456'],
   'ramesh.kumar1@iilm.edu': ['Ramesh@IILM2025', 'ramesh123', 'iilm123', '123456'],
+  'sonam.lata@iilm.edu': ['Sonam@IILM2025', 'sonam123', 'iilm123', 'teacher123', '123456'],
+  'naved.ahmad@iilm.edu': ['Naved@IILM2025', 'naved123', 'iilm123', 'teacher123', '123456'],
+  'anurag.jain@iilm.edu': ['Anurag@IILM2025', 'anurag123', 'iilm123', 'teacher123', '123456'],
 };
 
 // Known accepted initial passwords for sample students
-const ACCEPTED_STUDENT_PASSWORDS = ['Student@2581', 'student123', '123456', 'iilm123'];
+const ACCEPTED_STUDENT_PASSWORDS = ['Student@2581', 'Student@2481', 'student123', '123456', 'iilm123'];
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);

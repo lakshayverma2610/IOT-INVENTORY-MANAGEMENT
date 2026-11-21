@@ -1,0 +1,6242 @@
+[
+  {
+    "id": "stu-2481001",
+    "urn": "2481001",
+    "name": "Siyali Vats",
+    "email": "siyali.vats.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481002",
+    "urn": "2481002",
+    "name": "Saksham Mishra",
+    "email": "saksham.mishra.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481004",
+    "urn": "2481004",
+    "name": "Subhrayan Ghosh",
+    "email": "subhrayan.ghosh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481005",
+    "urn": "2481005",
+    "name": "Ritu Raj",
+    "email": "ritu.raj.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481006",
+    "urn": "2481006",
+    "name": "Raunak Kumar",
+    "email": "raunak.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481007",
+    "urn": "2481007",
+    "name": "Vinod Jena",
+    "email": "vinod.jena.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481008",
+    "urn": "2481008",
+    "name": "Vineet Kashyap",
+    "email": "vineet.kashyap.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481009",
+    "urn": "2481009",
+    "name": "Jasnoor Kaur",
+    "email": "jasnoor.kaur.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481010",
+    "urn": "2481010",
+    "name": "Prakhar Tyagi",
+    "email": "prakhar.tyagi.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481011",
+    "urn": "2481011",
+    "name": "Amulya Dabas",
+    "email": "amulya.dabas.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481012",
+    "urn": "2481012",
+    "name": "Shubham Kumar",
+    "email": "shubham.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481013",
+    "urn": "2481013",
+    "name": "Pranav Rattan",
+    "email": "pranav.rattan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481014",
+    "urn": "2481014",
+    "name": "Mayuri Verma",
+    "email": "mayuri.verma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481015",
+    "urn": "2481015",
+    "name": "Anshul Kumar",
+    "email": "anshul.khandodiya.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481016",
+    "urn": "2481016",
+    "name": "Lakshita Verma",
+    "email": "lakshita.verma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481017",
+    "urn": "2481017",
+    "name": "Anubhav Yadav",
+    "email": "anubha.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481019",
+    "urn": "2481019",
+    "name": "Punit",
+    "email": "punit.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481020",
+    "urn": "2481020",
+    "name": "Khushank Yadav",
+    "email": "khushank.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481021",
+    "urn": "2481021",
+    "name": "Kamlesh Kaushik Mishra",
+    "email": "kamleshkaushik.mishra.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481022",
+    "urn": "2481022",
+    "name": "Om Rohilla",
+    "email": "om.rohilla.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481023",
+    "urn": "2481023",
+    "name": "Piyush Mahapatra",
+    "email": "piyush.mahapatra.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481024",
+    "urn": "2481024",
+    "name": "Sidharth Kumar",
+    "email": "sidharth.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481025",
+    "urn": "2481025",
+    "name": "Rudraksh Sachdeva",
+    "email": "rudraksh.sachdeva.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481026",
+    "urn": "2481026",
+    "name": "Akash Sivanandan",
+    "email": "akash.sivanandan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481027",
+    "urn": "2481027",
+    "name": "SUSHRI SANGITA SWAIN",
+    "email": "sushrisangita.swain.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481029",
+    "urn": "2481029",
+    "name": "Ojasvit Verma",
+    "email": "ojasvit.verma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481031",
+    "urn": "2481031",
+    "name": "Akshay Goel",
+    "email": "akshay.goel.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481032",
+    "urn": "2481032",
+    "name": "Varun Chaudhary",
+    "email": "varun.chaudhary.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481033",
+    "urn": "2481033",
+    "name": "Dhananjay Kumar",
+    "email": "dhananjay.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481034",
+    "urn": "2481034",
+    "name": "Philem Arjun",
+    "email": "philem.arjun.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481037",
+    "urn": "2481037",
+    "name": "Lakshya Kalra",
+    "email": "lakshay.kalra.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481038",
+    "urn": "2481038",
+    "name": "Ishant Rao",
+    "email": "ishant.rao.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481041",
+    "urn": "2481041",
+    "name": "Kavyansh Sharma",
+    "email": "kavyansh.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481042",
+    "urn": "2481042",
+    "name": "Obaid Khan",
+    "email": "obaid.khan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481043",
+    "urn": "2481043",
+    "name": "Palak Mittal",
+    "email": "palak.mittal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481045",
+    "urn": "2481045",
+    "name": "Jayant Sharma",
+    "email": "jayant.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481046",
+    "urn": "2481046",
+    "name": "Divyansh Sharma",
+    "email": "divyansh.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481047",
+    "urn": "2481047",
+    "name": "Gautam Budhiraja",
+    "email": "gautam.budhiraj.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481048",
+    "urn": "2481048",
+    "name": "Dhruv Rangan",
+    "email": "dhruv.rangban.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481049",
+    "urn": "2481049",
+    "name": "Akanksha Arya",
+    "email": "akanshya.arya.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481050",
+    "urn": "2481050",
+    "name": "Vinayak Sharma",
+    "email": "vinayak.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481051",
+    "urn": "2481051",
+    "name": "Aashish Ranjan",
+    "email": "aashish.ranjan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481052",
+    "urn": "2481052",
+    "name": "Arnav Sharma",
+    "email": "arnav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481053",
+    "urn": "2481053",
+    "name": "Mannat Kapoor",
+    "email": "mannat.kapoor.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481054",
+    "urn": "2481054",
+    "name": "Shantanu Chauhan",
+    "email": "shantanu.chauhan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481055",
+    "urn": "2481055",
+    "name": "Harsh",
+    "email": "harsh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481057",
+    "urn": "2481057",
+    "name": "Yash Rathi",
+    "email": "yash.rathi.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481058",
+    "urn": "2481058",
+    "name": "Devansh Datta",
+    "email": "devansh.datta.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481059",
+    "urn": "2481059",
+    "name": "Mahak Arora",
+    "email": "mahak.arora.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481060",
+    "urn": "2481060",
+    "name": "Palak Sinha",
+    "email": "palak.sinha.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481061",
+    "urn": "2481061",
+    "name": "Gaurav Mehta",
+    "email": "gaurav.mehta.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481064",
+    "urn": "2481064",
+    "name": "Nilaksh Grover",
+    "email": "nilaksh.grover.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481065",
+    "urn": "2481065",
+    "name": "Vivek Kumar yadav",
+    "email": "vivekkumar.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481066",
+    "urn": "2481066",
+    "name": "Sayan Pal",
+    "email": "sayan.pal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481068",
+    "urn": "2481068",
+    "name": "Tanushi Bedi",
+    "email": "tanushi.bedi.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481069",
+    "urn": "2481069",
+    "name": "Khushi Diwan",
+    "email": "khushi.diwan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481070",
+    "urn": "2481070",
+    "name": "Unnat Krishna",
+    "email": "unnat.krishna.ug24@iilm,edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481071",
+    "urn": "2481071",
+    "name": "Jeet Tanwar",
+    "email": "jeet.tanwar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481072",
+    "urn": "2481072",
+    "name": "Sarthak Raghav",
+    "email": "sarthak.raghav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481075",
+    "urn": "2481075",
+    "name": "Aditya Verma",
+    "email": "aditya.verma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481076",
+    "urn": "2481076",
+    "name": "Vansh Rana",
+    "email": "vansh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481077",
+    "urn": "2481077",
+    "name": "Manveer Singh Bhalla",
+    "email": "manveersingh.bhalla.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481078",
+    "urn": "2481078",
+    "name": "Rohit Yadav",
+    "email": "Rohit.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481079",
+    "urn": "2481079",
+    "name": "Vimal",
+    "email": "vimal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481080",
+    "urn": "2481080",
+    "name": "Aman",
+    "email": "aman.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481082",
+    "urn": "2481082",
+    "name": "Ayush Aditya",
+    "email": "ayush.aditya.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481084",
+    "urn": "2481084",
+    "name": "Daksh Kaushik",
+    "email": "daksh.kaushik.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481085",
+    "urn": "2481085",
+    "name": "Kajal Kashyap",
+    "email": "kajal.kashyap.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481086",
+    "urn": "2481086",
+    "name": "Harmanjot Kaur",
+    "email": "harmanjot.kaur.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481087",
+    "urn": "2481087",
+    "name": "Konark Rana",
+    "email": "konark.rana.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481088",
+    "urn": "2481088",
+    "name": "Daksh Kataria",
+    "email": "daksh.kataria.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481090",
+    "urn": "2481090",
+    "name": "Harsh Kataria",
+    "email": "harsh.kataria.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481091",
+    "urn": "2481091",
+    "name": "Soyamjeet",
+    "email": "soyamjeet.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481092",
+    "urn": "2481092",
+    "name": "Vikramaditya Ohlyan",
+    "email": "vikramaditya.ohlyan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481094",
+    "urn": "2481094",
+    "name": "Meet Patel",
+    "email": "meet.patel.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481095",
+    "urn": "2481095",
+    "name": "Aditya Kaushik",
+    "email": "aditya.kaushik.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481096",
+    "urn": "2481096",
+    "name": "Krishna Ghosh",
+    "email": "krishna.ghosh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481097",
+    "urn": "2481097",
+    "name": "Aryan Kumar",
+    "email": "aryan.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481098",
+    "urn": "2481098",
+    "name": "Aryan Pahal",
+    "email": "aryan.pahal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481099",
+    "urn": "2481099",
+    "name": "Aditya Seluriyal",
+    "email": "aditya.seluriyal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481100",
+    "urn": "2481100",
+    "name": "Reyaan Malik",
+    "email": "reyaan.malik.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481101",
+    "urn": "2481101",
+    "name": "Harshit Yogeshwar",
+    "email": "harshit.yogeshwar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481102",
+    "urn": "2481102",
+    "name": "Hiral Sehrawat",
+    "email": "hiral.sehrawat.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481104",
+    "urn": "2481104",
+    "name": "Pritish Krishnan",
+    "email": "pritish.krishnan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481105",
+    "urn": "2481105",
+    "name": "Lakshay Sharma",
+    "email": "lakshay.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481106",
+    "urn": "2481106",
+    "name": "Ashna Vats",
+    "email": "ashna.vats.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481107",
+    "urn": "2481107",
+    "name": "Gourav Sehrawat",
+    "email": "gourav.sehrawat.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481108",
+    "urn": "2481108",
+    "name": "Vivaan Sinha",
+    "email": "vivaan.sinha.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481109",
+    "urn": "2481109",
+    "name": "Ashwin Anantharam Udupa",
+    "email": "ashwinanantharam.udupa.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481110",
+    "urn": "2481110",
+    "name": "Arsalan Ali",
+    "email": "arsalan.ali.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481111",
+    "urn": "2481111",
+    "name": "Vinit Panwar",
+    "email": "vinit.panwar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481112",
+    "urn": "2481112",
+    "name": "Drishti Pahuja",
+    "email": "drishti.pahuja.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481113",
+    "urn": "2481113",
+    "name": "Krish Sharma",
+    "email": "krish.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481114",
+    "urn": "2481114",
+    "name": "Chetan Sharma",
+    "email": "chetan.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481115",
+    "urn": "2481115",
+    "name": "Arvind Khanna",
+    "email": "arvind.khanna.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481116",
+    "urn": "2481116",
+    "name": "Sujal Lakhera",
+    "email": "sujal.lakhera.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481117",
+    "urn": "2481117",
+    "name": "Jiya Singh",
+    "email": "jiya.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481119",
+    "urn": "2481119",
+    "name": "Payal Yadav",
+    "email": "payal.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481120",
+    "urn": "2481120",
+    "name": "Daksh Shankhdhar",
+    "email": "daksh.shankhdhar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481121",
+    "urn": "2481121",
+    "name": "Harsh Kumar",
+    "email": "harsh.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481122",
+    "urn": "2481122",
+    "name": "Sakshi Rajain",
+    "email": "sakshi.ranjain.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481123",
+    "urn": "2481123",
+    "name": "Eshita Chauhan",
+    "email": "eshita.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481125",
+    "urn": "2481125",
+    "name": "Nimrat Singh Bains",
+    "email": "nimratsingh.bains.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481126",
+    "urn": "2481126",
+    "name": "Rajan Kumar",
+    "email": "rajan.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481127",
+    "urn": "2481127",
+    "name": "Khushboo Kumari",
+    "email": "khushboo.kumari.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481129",
+    "urn": "2481129",
+    "name": "vanshika vats",
+    "email": "vanshika.vats.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481130",
+    "urn": "2481130",
+    "name": "Vaibhav",
+    "email": "vaibhav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481132",
+    "urn": "2481132",
+    "name": "Manas Kainth",
+    "email": "manas.kainth.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481133",
+    "urn": "2481133",
+    "name": "Varnyaa Sharma",
+    "email": "varnyaa.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481134",
+    "urn": "2481134",
+    "name": "Akshit Singh",
+    "email": "akshit.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481135",
+    "urn": "2481135",
+    "name": "Pulkit Sharma",
+    "email": "pulkit.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481137",
+    "urn": "2481137",
+    "name": "Shireen Devgun",
+    "email": "shireen.devgun.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481138",
+    "urn": "2481138",
+    "name": "Kanishk Patel",
+    "email": "kanishk.patel.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481139",
+    "urn": "2481139",
+    "name": "Taksh Sherawat",
+    "email": "taksh.sherawat.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481142",
+    "urn": "2481142",
+    "name": "Ananya Singh",
+    "email": "ananya.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481143",
+    "urn": "2481143",
+    "name": "Anjali",
+    "email": "anjali.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481144",
+    "urn": "2481144",
+    "name": "Anjali Singh",
+    "email": "anjali.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481146",
+    "urn": "2481146",
+    "name": "Bhoomi Kataria",
+    "email": "bhoomi.kataria.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481149",
+    "urn": "2481149",
+    "name": "Divanshi Mittal",
+    "email": "divanshi.mittal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481150",
+    "urn": "2481150",
+    "name": "Girish Khanna",
+    "email": "girish.khanna.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481151",
+    "urn": "2481151",
+    "name": "Jahnavi Solanki",
+    "email": "jahnavi.solanki.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481152",
+    "urn": "2481152",
+    "name": "Kamaljeet Bura",
+    "email": "kamaljeet.bura.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481153",
+    "urn": "2481153",
+    "name": "Ketan Singh",
+    "email": "ketan.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481156",
+    "urn": "2481156",
+    "name": "Manjot singh",
+    "email": "manjot.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481157",
+    "urn": "2481157",
+    "name": "Mohd Armaan",
+    "email": "mohd.armaan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481159",
+    "urn": "2481159",
+    "name": "Nisha",
+    "email": "nisha.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481160",
+    "urn": "2481160",
+    "name": "Nitin Yadav",
+    "email": "nitin.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481161",
+    "urn": "2481161",
+    "name": "Prithvi Singh Rawat",
+    "email": "prithvisingh.rawat.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481163",
+    "urn": "2481163",
+    "name": "Ravi Kumar",
+    "email": "ravi.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481164",
+    "urn": "2481164",
+    "name": "Rudraksh Bharti",
+    "email": "rudraksh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481165",
+    "urn": "2481165",
+    "name": "Ryan Joshi",
+    "email": "ryan.joshi.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481166",
+    "urn": "2481166",
+    "name": "Tanish Raghav",
+    "email": "tanish.raghav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481167",
+    "urn": "2481167",
+    "name": "Tanishq Sachan",
+    "email": "tanishq.sachin.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481168",
+    "urn": "2481168",
+    "name": "Tanishq Yadav",
+    "email": "tanishq.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481169",
+    "urn": "2481169",
+    "name": "Varun Jindal",
+    "email": "varun.jindal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481170",
+    "urn": "2481170",
+    "name": "Vidushi Sehrawat",
+    "email": "vidushi.sehrawat.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481171",
+    "urn": "2481171",
+    "name": "Aaditya Vardhan Singh",
+    "email": "aadityavardhan.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481172",
+    "urn": "2481172",
+    "name": "Harshal Thakur",
+    "email": "harshal.thakur.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481173",
+    "urn": "2481173",
+    "name": "Jatin Khatri",
+    "email": "jatin.khatri.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481174",
+    "urn": "2481174",
+    "name": "Naitik Raghav",
+    "email": "naitik.raghav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481175",
+    "urn": "2481175",
+    "name": "Pawan",
+    "email": "pawan.2024.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481176",
+    "urn": "2481176",
+    "name": "Pratyush Malhotra",
+    "email": "pratyush.malhotra.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481177",
+    "urn": "2481177",
+    "name": "Soummadeep Goswami",
+    "email": "soummadeep.goswami.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481178",
+    "urn": "2481178",
+    "name": "Yash Yadav",
+    "email": "yashyadav.1.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481180",
+    "urn": "2481180",
+    "name": "Vaibhavi",
+    "email": "vaibhavi.2024.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481183",
+    "urn": "2481183",
+    "name": "Vinayak Chibber",
+    "email": "vinayak.chibber.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481184",
+    "urn": "2481184",
+    "name": "Aditya Bhatt",
+    "email": "aditya.bhatt.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481185",
+    "urn": "2481185",
+    "name": "Raghav Sharma",
+    "email": "raghav.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481186",
+    "urn": "2481186",
+    "name": "Krish Negi",
+    "email": "krish.negi.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481187",
+    "urn": "2481187",
+    "name": "Shivansee",
+    "email": "shivansee.2024.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481188",
+    "urn": "2481188",
+    "name": "Nishant Sharma",
+    "email": "nishant.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481189",
+    "urn": "2481189",
+    "name": "Akshit Dhanda",
+    "email": "akshit.dhanda.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481190",
+    "urn": "2481190",
+    "name": "Ansh Gupta",
+    "email": "anshgupta.1.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481191",
+    "urn": "2481191",
+    "name": "Sarthak Yadav",
+    "email": "sarthak.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481193",
+    "urn": "2481193",
+    "name": "Vihaan Yadav",
+    "email": "vihaan.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481194",
+    "urn": "2481194",
+    "name": "Shubham chaturvedi",
+    "email": "shubham.chaturvedi.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481195",
+    "urn": "2481195",
+    "name": "Aymaan Dhingra",
+    "email": "aymaan.dhingra.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481196",
+    "urn": "2481196",
+    "name": "Aarsh Malik",
+    "email": "aarsh.malik.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481197",
+    "urn": "2481197",
+    "name": "Khilesh Kishore",
+    "email": "khilesh.kishore.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481198",
+    "urn": "2481198",
+    "name": "manish yadav",
+    "email": "manish.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481199",
+    "urn": "2481199",
+    "name": "Sarthak Agarwal",
+    "email": "sarthak.agarwal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481201",
+    "urn": "2481201",
+    "name": "Dev Kumar Singh",
+    "email": "devkumar.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481203",
+    "urn": "2481203",
+    "name": "Ritik Dahiya",
+    "email": "ritik.dahiya.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481204",
+    "urn": "2481204",
+    "name": "Kunal chauhan",
+    "email": "kunal.chauhan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481208",
+    "urn": "2481208",
+    "name": "lakshit khanna",
+    "email": "lakshit.khanna.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481210",
+    "urn": "2481210",
+    "name": "TAANISH PANT",
+    "email": "taanish.pant.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481212",
+    "urn": "2481212",
+    "name": "Aaditya jha",
+    "email": "aaditya.jha.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481214",
+    "urn": "2481214",
+    "name": "Kriti Abrol",
+    "email": "kriti.abrol.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481215",
+    "urn": "2481215",
+    "name": "Chetna  YADAV",
+    "email": "chetna.2024.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481216",
+    "urn": "2481216",
+    "name": "Tanishq Kumar Nishad",
+    "email": "tanishqkumar.nishad.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481217",
+    "urn": "2481217",
+    "name": "Aditya Chaturvedi",
+    "email": "aditya.chaturvedi.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481218",
+    "urn": "2481218",
+    "name": "Sara Solanki",
+    "email": "sara.solanki.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481219",
+    "urn": "2481219",
+    "name": "Manav Yadav",
+    "email": "manav.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481220",
+    "urn": "2481220",
+    "name": "Mehar Bhargava",
+    "email": "MEHAR5IVE@GMAIL.COM",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481221",
+    "urn": "2481221",
+    "name": "K Jahnvi",
+    "email": "k.jahnvi.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481222",
+    "urn": "2481222",
+    "name": "Ritik Dahiya",
+    "email": "ritikdahiya.1.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481223",
+    "urn": "2481223",
+    "name": "Khush Aggarwal",
+    "email": "khush.aggarwal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481224",
+    "urn": "2481224",
+    "name": "Nishkarsh Kumar",
+    "email": "nishkarsh.kumar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481225",
+    "urn": "2481225",
+    "name": "Ashutosh Raghav",
+    "email": "ashutosh.raghav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481226",
+    "urn": "2481226",
+    "name": "Lakshay Sharma",
+    "email": "lakshaysharma.1.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481227",
+    "urn": "2481227",
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481228",
+    "urn": "2481228",
+    "name": "Vedant Mathur",
+    "email": "vedant.mathur.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481229",
+    "urn": "2481229",
+    "name": "Disha Yadav",
+    "email": "disha.yadav.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481230",
+    "urn": "2481230",
+    "name": "Arjun Pundir",
+    "email": "arjun.pundir.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481231",
+    "urn": "2481231",
+    "name": "Parth Saraswat",
+    "email": "parth.saraswat.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481232",
+    "urn": "2481232",
+    "name": "Rachit",
+    "email": "rachit.2024.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481233",
+    "urn": "2481233",
+    "name": "Tanvi Rao",
+    "email": "tanvi.rao.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481234",
+    "urn": "2481234",
+    "name": "Prisha Singh",
+    "email": "prisha.singh.ug24@iilm.eu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481236",
+    "urn": "2481236",
+    "name": "abhishek thakur",
+    "email": "abhishek.thakur.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481237",
+    "urn": "2481237",
+    "name": "Bhoomika Mishra",
+    "email": "bhoomika.mishra.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481238",
+    "urn": "2481238",
+    "name": "Arnav Gupta",
+    "email": "arnav.gupta.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481239",
+    "urn": "2481239",
+    "name": "Bhavya Vasan",
+    "email": "bhavya.vasan.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481240",
+    "urn": "2481240",
+    "name": "Harsh",
+    "email": "harsh.2024.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481241",
+    "urn": "2481241",
+    "name": "Vashu Kakran",
+    "email": "vashu.kakran.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481242",
+    "urn": "2481242",
+    "name": "Yashveer Singh",
+    "email": "yashveer.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481243",
+    "urn": "2481243",
+    "name": "Nikhil Dhawal",
+    "email": "nikhil.dhawal.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A1",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481244",
+    "urn": "2481244",
+    "name": "Rushil Malhotra",
+    "email": "rushil.malhotra.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481245",
+    "urn": "2481245",
+    "name": "Aaryaveer Singh Rana",
+    "email": "aryaveersingh.rana.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481246",
+    "urn": "2481246",
+    "name": "Jatin",
+    "email": "jatin.2024.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481247",
+    "urn": "2481247",
+    "name": "Sagar Singh",
+    "email": "sagar.singh.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481248",
+    "urn": "2481248",
+    "name": "Soumen kumar datta",
+    "email": "soumen.kumar.dutta.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481249",
+    "urn": "2481249",
+    "name": "Kartikey Sharma",
+    "email": "kartikey.sharma.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481251",
+    "urn": "2481251",
+    "name": "Shivam Grag",
+    "email": "shivam.garg.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481252",
+    "urn": "2481252",
+    "name": "ZULFIQAR HASSANAIN",
+    "email": "zulfiqar.hassanain.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481253",
+    "urn": "2481253",
+    "name": "Kabir Kalia",
+    "email": "kabir.kalia.cs28@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481254",
+    "urn": "2481254",
+    "name": "Tuhinanshu kalher",
+    "email": "tuhinanshu.kalher.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "A2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481255",
+    "urn": "2481255",
+    "name": "Gaurish Bhaskar",
+    "email": "gaurish.bhaskar.ug24@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481256",
+    "urn": "2481256",
+    "name": "Satyam Kumar",
+    "email": "2481256@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "B2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-2481281",
+    "urn": "2481281",
+    "name": "Niam Swargari",
+    "email": "niam.swargari.ug20@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 3,
+    "section": "C2",
+    "batch": "2024-28"
+  },
+  {
+    "id": "stu-258100001",
+    "urn": "258100001",
+    "name": "Suresh Gopal Singh (Btech 2025 Batch Lateral entry from 3rd Semester)",
+    "email": "suresh.25scs1003002367@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-258100002",
+    "urn": "258100002",
+    "name": "Ismayra Praveen (Btech 2025 Batch Lateral entry from 3rd Semester)",
+    "email": "ismayra.praveen.25@gg.iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-258100003",
+    "urn": "258100003",
+    "name": "Jatin(Btech 2025 Batch Lateral entry from 3rd Semester)",
+    "email": "jatin.2025.25@gg.iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-258100007",
+    "urn": "258100007",
+    "name": "Jai Kashyap (Btech 2025 Batch Lateral entry from 3rd Semester)",
+    "email": "jai.kashyap.25@gg.iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581001",
+    "urn": "2581001",
+    "name": "Mohammed Q Migdad",
+    "email": "mohammed.migdad.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581002",
+    "urn": "2581002",
+    "name": "Suyash Rawat",
+    "email": "suyash.rawat.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581003",
+    "urn": "2581003",
+    "name": "Abhiram Binil",
+    "email": "abhiram.binil.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581004",
+    "urn": "2581004",
+    "name": "Vishnu G Pillai",
+    "email": "vishnu.pillai.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581005",
+    "urn": "2581005",
+    "name": "Disha Radhwani",
+    "email": "disha.radhwani.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581006",
+    "urn": "2581006",
+    "name": "Rudra Bhaskar Mekale",
+    "email": "Rudra.mekale.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581007",
+    "urn": "2581007",
+    "name": "Sarthak Manav",
+    "email": "sarthak.manav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581008",
+    "urn": "2581008",
+    "name": "Lakshay Verma",
+    "email": "lakshay.verma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581009",
+    "urn": "2581009",
+    "name": "Ayush Raj",
+    "email": "ayush.raj.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581010",
+    "urn": "2581010",
+    "name": "Nandika Sharma",
+    "email": "nandika.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581011",
+    "urn": "2581011",
+    "name": "Keshav Singh",
+    "email": "keshav.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581013",
+    "urn": "2581013",
+    "name": "Aanya thakral",
+    "email": "aanya.thakral.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581014",
+    "urn": "2581014",
+    "name": "Vibhav Bhardwaj",
+    "email": "Vibhav.bhardwaj.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581015",
+    "urn": "2581015",
+    "name": "Kunal Verma",
+    "email": "kunal.verma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581016",
+    "urn": "2581016",
+    "name": "Parteek kumar",
+    "email": "parteek.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581017",
+    "urn": "2581017",
+    "name": "Suparbha Lakhlan",
+    "email": "suparbha.lakhlan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581018",
+    "urn": "2581018",
+    "name": "Ayesha Sahu",
+    "email": "ayesha.sahu.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581019",
+    "urn": "2581019",
+    "name": "Rishabh Verma",
+    "email": "rishabh.verma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581020",
+    "urn": "2581020",
+    "name": "Mayank Bisht",
+    "email": "mayank.bisht.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581021",
+    "urn": "2581021",
+    "name": "Vinay Bisht",
+    "email": "vinay.bisht.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581022",
+    "urn": "2581022",
+    "name": "Sparsh Gigoo",
+    "email": "sparsh.gigoo.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581023",
+    "urn": "2581023",
+    "name": "Manish Sahoo",
+    "email": "manish.sahoo.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581024",
+    "urn": "2581024",
+    "name": "Paras Chauhan",
+    "email": "paras.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581025",
+    "urn": "2581025",
+    "name": "Simran",
+    "email": "simran.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581026",
+    "urn": "2581026",
+    "name": "Ryan Verma",
+    "email": "ryan.verma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581027",
+    "urn": "2581027",
+    "name": "Garima Malik",
+    "email": "garima.malik.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581028",
+    "urn": "2581028",
+    "name": "Nikhil Gupta",
+    "email": "nikhil.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581029",
+    "urn": "2581029",
+    "name": "Harsh Chandra",
+    "email": "harsh.chandra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581030",
+    "urn": "2581030",
+    "name": "Sumedha Rawat",
+    "email": "sumedha.rawat.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581031",
+    "urn": "2581031",
+    "name": "Ness Gaur",
+    "email": "ness.gaur.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581032",
+    "urn": "2581032",
+    "name": "Poorvi Dabral",
+    "email": "poorvi.dabral.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581033",
+    "urn": "2581033",
+    "name": "Varsha Kumari",
+    "email": "varsha.kumari.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581034",
+    "urn": "2581034",
+    "name": "Sagar Kaushik",
+    "email": "sagar.kaushik.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581035",
+    "urn": "2581035",
+    "name": "Manaswi",
+    "email": "manaswi.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581036",
+    "urn": "2581036",
+    "name": "Daksh Saini",
+    "email": "daksh.saini.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581037",
+    "urn": "2581037",
+    "name": "Vaishnavi Singh",
+    "email": "vaishanvi.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581038",
+    "urn": "2581038",
+    "name": "Piyush Sharma",
+    "email": "piyush.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581039",
+    "urn": "2581039",
+    "name": "Parth Yadav",
+    "email": "parth.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581040",
+    "urn": "2581040",
+    "name": "Ranveer Singh",
+    "email": "ranveer.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581041",
+    "urn": "2581041",
+    "name": "Ansh Arya",
+    "email": "ansh.arya.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581042",
+    "urn": "2581042",
+    "name": "Paras Yadav",
+    "email": "paras.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581043",
+    "urn": "2581043",
+    "name": "Aryan Manral",
+    "email": "aryan.manral.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581044",
+    "urn": "2581044",
+    "name": "Shaurya Vats",
+    "email": "shaurya.vats.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581045",
+    "urn": "2581045",
+    "name": "Abhi Sharma",
+    "email": "abhi.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581046",
+    "urn": "2581046",
+    "name": "Aadi Kohar",
+    "email": "aadi.kohar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581047",
+    "urn": "2581047",
+    "name": "Kanishka Gupta",
+    "email": "kanishka.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581048",
+    "urn": "2581048",
+    "name": "Sidharth Beriwal",
+    "email": "sidharth.beriwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581049",
+    "urn": "2581049",
+    "name": "Harshit",
+    "email": "harshit.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581050",
+    "urn": "2581050",
+    "name": "Manisha Sahoo",
+    "email": "manisha.sahoo.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581051",
+    "urn": "2581051",
+    "name": "Omm Shekhar",
+    "email": "omm.shekhar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581052",
+    "urn": "2581052",
+    "name": "Himanshi chaturvedi",
+    "email": "himanshi.chaturvedi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581053",
+    "urn": "2581053",
+    "name": "Vaibhav Sharma",
+    "email": "vaibhav.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581054",
+    "urn": "2581054",
+    "name": "Aman lal singh",
+    "email": "aman.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581056",
+    "urn": "2581056",
+    "name": "Aditya Shankar",
+    "email": "aditya.shankar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581057",
+    "urn": "2581057",
+    "name": "Mohit",
+    "email": "mohit.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581058",
+    "urn": "2581058",
+    "name": "Aarav Raj",
+    "email": "aarav.raj.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581059",
+    "urn": "2581059",
+    "name": "Laavannaya Sharma",
+    "email": "laavannaya.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581060",
+    "urn": "2581060",
+    "name": "Anshu Raj",
+    "email": "anshu.raj.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581061",
+    "urn": "2581061",
+    "name": "Aanya Gupta",
+    "email": "aanya.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581062",
+    "urn": "2581062",
+    "name": "R Nidhi",
+    "email": "r.nidhi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581063",
+    "urn": "2581063",
+    "name": "Garv Bachani",
+    "email": "gac.bachani.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581064",
+    "urn": "2581064",
+    "name": "Bhavya Gahlot",
+    "email": "bhavya.gahlot.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581065",
+    "urn": "2581065",
+    "name": "Ayush Raj Pandey",
+    "email": "ayush.pandey.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581066",
+    "urn": "2581066",
+    "name": "Nilay Nayyar",
+    "email": "nilay.nayyar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581067",
+    "urn": "2581067",
+    "name": "Aditya Sehgal",
+    "email": "aditya.sehgal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581068",
+    "urn": "2581068",
+    "name": "Yuvraj Gora",
+    "email": "yuvraj.gora.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581069",
+    "urn": "2581069",
+    "name": "Himanshu Sharma",
+    "email": "himanshu.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581070",
+    "urn": "2581070",
+    "name": "Nipun Mahajan",
+    "email": "nipun.mahajan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581071",
+    "urn": "2581071",
+    "name": "Harshit Yadav",
+    "email": "harshit.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581072",
+    "urn": "2581072",
+    "name": "Vishesh Vyas",
+    "email": "vishesh.vyas.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581073",
+    "urn": "2581073",
+    "name": "Lovkesh",
+    "email": "lovkesh.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581074",
+    "urn": "2581074",
+    "name": "Yash Narwal",
+    "email": "yash.narwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581075",
+    "urn": "2581075",
+    "name": "Aditya Chauhan",
+    "email": "aditya.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581076",
+    "urn": "2581076",
+    "name": "Rishit Bhardwaj",
+    "email": "rishit.bhardwaj.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581077",
+    "urn": "2581077",
+    "name": "Suryansh Rana",
+    "email": "suryansh.rana.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581078",
+    "urn": "2581078",
+    "name": "Laavannaya Sharma",
+    "email": "dhruv.rajput.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581079",
+    "urn": "2581079",
+    "name": "Sushant yadav",
+    "email": "sushant.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581080",
+    "urn": "2581080",
+    "name": "Gourang Jawa",
+    "email": "gourang.jawa.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581081",
+    "urn": "2581081",
+    "name": "Anuj",
+    "email": "anuj.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581082",
+    "urn": "2581082",
+    "name": "Sahitya Swarup",
+    "email": "sahitya.swarup.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581083",
+    "urn": "2581083",
+    "name": "Mehak bidichandani",
+    "email": "mehak.bidichandani.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581084",
+    "urn": "2581084",
+    "name": "Piya Kakar",
+    "email": "piya.kakar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581085",
+    "urn": "2581085",
+    "name": "Darsh Tyagi",
+    "email": "darsh.tyagi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581086",
+    "urn": "2581086",
+    "name": "Gaurav",
+    "email": "gaurav.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581087",
+    "urn": "2581087",
+    "name": "Yashika Kumbha",
+    "email": "yashika.kumbha.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581088",
+    "urn": "2581088",
+    "name": "Tanish gupta",
+    "email": "tanish.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581089",
+    "urn": "2581089",
+    "name": "Kabir Karanwal",
+    "email": "kabir.karanwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581090",
+    "urn": "2581090",
+    "name": "Daksh Adlakha",
+    "email": "daksh.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581091",
+    "urn": "2581091",
+    "name": "Nishant",
+    "email": "nishant.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581092",
+    "urn": "2581092",
+    "name": "Bhavishya Khatri",
+    "email": "bhavishya.khatri.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581093",
+    "urn": "2581093",
+    "name": "Rishabh Raj Singh",
+    "email": "rishabh.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581094",
+    "urn": "2581094",
+    "name": "Jai Attri",
+    "email": "jai.attri.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581095",
+    "urn": "2581095",
+    "name": "Kanan Batheja",
+    "email": "kanan.batheja.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581096",
+    "urn": "2581096",
+    "name": "Sunidhi Kamboz",
+    "email": "sunidhi.kamboz.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581097",
+    "urn": "2581097",
+    "name": "Rajguru Taliyan",
+    "email": "rajguru.taliyan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581098",
+    "urn": "2581098",
+    "name": "Jasveer Harsana Gurjar",
+    "email": "jasveer.harsana.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581099",
+    "urn": "2581099",
+    "name": "Sakshum Gupta",
+    "email": "sakshum.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581100",
+    "urn": "2581100",
+    "name": "Punit Yadav",
+    "email": "punit.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581101",
+    "urn": "2581101",
+    "name": "Maanya Narang",
+    "email": "maanya.narang.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581102",
+    "urn": "2581102",
+    "name": "Somay",
+    "email": "somay.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581103",
+    "urn": "2581103",
+    "name": "Siddharth Tiwari",
+    "email": "siddharth.tiwari.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581105",
+    "urn": "2581105",
+    "name": "Abhinav",
+    "email": "abhinav.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581106",
+    "urn": "2581106",
+    "name": "Harshdipt Singh",
+    "email": "harshdipt.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581107",
+    "urn": "2581107",
+    "name": "Amrit Kumar",
+    "email": "amrit.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581108",
+    "urn": "2581108",
+    "name": "Mananjot Singh Kala",
+    "email": "mananjot.kala.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581109",
+    "urn": "2581109",
+    "name": "Saksham Malik",
+    "email": "saksham.malik.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581110",
+    "urn": "2581110",
+    "name": "Girish",
+    "email": "girish.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581111",
+    "urn": "2581111",
+    "name": "Harsh Tanwar",
+    "email": "harsh.tanwar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581112",
+    "urn": "2581112",
+    "name": "Kavya Gupta",
+    "email": "kavya.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581113",
+    "urn": "2581113",
+    "name": "Harshit Sejwal",
+    "email": "harshit.sejwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581115",
+    "urn": "2581115",
+    "name": "Veer Chaudhary",
+    "email": "veer.chaudhary.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581116",
+    "urn": "2581116",
+    "name": "Harsh Khatri",
+    "email": "harsh.khatri.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581117",
+    "urn": "2581117",
+    "name": "Aditya Kumar Tiwari",
+    "email": "aditya.tiwari.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581118",
+    "urn": "2581118",
+    "name": "Harsh Prakash",
+    "email": "harsh.prakash.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581120",
+    "urn": "2581120",
+    "name": "Soumya Rawat",
+    "email": "soumya.rawat.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581121",
+    "urn": "2581121",
+    "name": "Shivam Singh",
+    "email": "shivam.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581123",
+    "urn": "2581123",
+    "name": "Ansh",
+    "email": "ansh.tyagi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581125",
+    "urn": "2581125",
+    "name": "Siddharth Garg",
+    "email": "siddharth.garg.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581126",
+    "urn": "2581126",
+    "name": "Utkarsh Saini",
+    "email": "utkarsh.saini.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581127",
+    "urn": "2581127",
+    "name": "Arpita Shukla",
+    "email": "arpita.shukla.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581128",
+    "urn": "2581128",
+    "name": "Piyush",
+    "email": "piyush.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581129",
+    "urn": "2581129",
+    "name": "Vineet Yadav",
+    "email": "vineet.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581130",
+    "urn": "2581130",
+    "name": "Divya Bohra",
+    "email": "divya.bohra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581131",
+    "urn": "2581131",
+    "name": "Arnav Kalra",
+    "email": "arnav.kalra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581133",
+    "urn": "2581133",
+    "name": "Vihaan Sharma",
+    "email": "vihaan.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581134",
+    "urn": "2581134",
+    "name": "Rithik Jain",
+    "email": "rithik.jain.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581135",
+    "urn": "2581135",
+    "name": "Ayush Singh",
+    "email": "ayush.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581136",
+    "urn": "2581136",
+    "name": "Harsh Mishra",
+    "email": "harsh.mishra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581137",
+    "urn": "2581137",
+    "name": "Naman Mangla",
+    "email": "naman.mangla.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581138",
+    "urn": "2581138",
+    "name": "Parivesh Singh",
+    "email": "parivesh.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581139",
+    "urn": "2581139",
+    "name": "Pratham Agrawal",
+    "email": "pratham.agrawal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581140",
+    "urn": "2581140",
+    "name": "Namita Sharma",
+    "email": "namita.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581141",
+    "urn": "2581141",
+    "name": "Rishit Bhatt",
+    "email": "rishit.bhatt.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581142",
+    "urn": "2581142",
+    "name": "Pratyaksh Rahi",
+    "email": "pratyakh.rahi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581144",
+    "urn": "2581144",
+    "name": "Arnav Khanna",
+    "email": "arnav.khanna.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581145",
+    "urn": "2581145",
+    "name": "Chetna Negi",
+    "email": "chetna.negi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581146",
+    "urn": "2581146",
+    "name": "Ankur Singh",
+    "email": "ankur.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581147",
+    "urn": "2581147",
+    "name": "Dhruv Bhalla",
+    "email": "dhruv.bhalla.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581148",
+    "urn": "2581148",
+    "name": "Tushar",
+    "email": "tushar.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581149",
+    "urn": "2581149",
+    "name": "Vaibhav Gaur",
+    "email": "vaibhav.gaur.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581150",
+    "urn": "2581150",
+    "name": "Shivendra Yadav",
+    "email": "shivendra.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581151",
+    "urn": "2581151",
+    "name": "Pranad Sawkar",
+    "email": "pranad.sawkar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581152",
+    "urn": "2581152",
+    "name": "Vanya Bhardwaj",
+    "email": "vanya.bhardwaj.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581153",
+    "urn": "2581153",
+    "name": "Krishna Dhiman",
+    "email": "krishna.dhiman.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581154",
+    "urn": "2581154",
+    "name": "Atul Chauhan",
+    "email": "atul.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581155",
+    "urn": "2581155",
+    "name": "Sambhav Mohapatra",
+    "email": "sambhav.mohapatra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581156",
+    "urn": "2581156",
+    "name": "Mohnish Budhwar",
+    "email": "mohnish.budhwar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581157",
+    "urn": "2581157",
+    "name": "Sathvika Singoti",
+    "email": "sathvika.singoti.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581158",
+    "urn": "2581158",
+    "name": "Spandan Srivastava",
+    "email": "spandan.srivastava.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581160",
+    "urn": "2581160",
+    "name": "Khushi Dahiya",
+    "email": "khushi.dahiya.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581161",
+    "urn": "2581161",
+    "name": "Siddhant Sharma",
+    "email": "siddhant.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581162",
+    "urn": "2581162",
+    "name": "Aditya Jain",
+    "email": "aditya.jain.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581163",
+    "urn": "2581163",
+    "name": "krishiv nanda",
+    "email": "krishiv.nanda.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581164",
+    "urn": "2581164",
+    "name": "Aayaan Kumar",
+    "email": "aayaan.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581165",
+    "urn": "2581165",
+    "name": "Rakshit Yadav",
+    "email": "rakshit.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581166",
+    "urn": "2581166",
+    "name": "Yash Gupta",
+    "email": "yash.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581167",
+    "urn": "2581167",
+    "name": "Rinku",
+    "email": "rinku.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581168",
+    "urn": "2581168",
+    "name": "Ayush Yadav",
+    "email": "ayush.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581169",
+    "urn": "2581169",
+    "name": "Mehak",
+    "email": "mehak.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581170",
+    "urn": "2581170",
+    "name": "Riya Sharma",
+    "email": "riya.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581171",
+    "urn": "2581171",
+    "name": "Rajveer Singh",
+    "email": "rajveer.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581172",
+    "urn": "2581172",
+    "name": "Aarush Choubey",
+    "email": "aarush.choubey.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581173",
+    "urn": "2581173",
+    "name": "Harsh Singhal",
+    "email": "harsh.singhal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581175",
+    "urn": "2581175",
+    "name": "Vaibhav Yadav",
+    "email": "vaibhav.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581176",
+    "urn": "2581176",
+    "name": "Vimlesh Kumar",
+    "email": "vimlesh.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581177",
+    "urn": "2581177",
+    "name": "Shubham Choudhary",
+    "email": "shubham.choudhary.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581178",
+    "urn": "2581178",
+    "name": "Aryan Srivastava",
+    "email": "aryan.srivastava.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581179",
+    "urn": "2581179",
+    "name": "Aman Shokaria",
+    "email": "aman.shokaria.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581180",
+    "urn": "2581180",
+    "name": "Sondeep Biswas",
+    "email": "sondeep.biswas.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581181",
+    "urn": "2581181",
+    "name": "Abhishek Bisht",
+    "email": "abhishek.bisht.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581182",
+    "urn": "2581182",
+    "name": "Priyansh Chopra",
+    "email": "priyansh.chopra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581183",
+    "urn": "2581183",
+    "name": "Aditya Ranjan",
+    "email": "aditya.ranjan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581184",
+    "urn": "2581184",
+    "name": "Harsh Kumar",
+    "email": "harsh.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581185",
+    "urn": "2581185",
+    "name": "Adhyayan Bansal",
+    "email": "adhyayan.bansal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581186",
+    "urn": "2581186",
+    "name": "Ojas Choudhary",
+    "email": "ojas.choudhary.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581187",
+    "urn": "2581187",
+    "name": "Gatik Tayal",
+    "email": "gatik.tayal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581188",
+    "urn": "2581188",
+    "name": "Shivansh Vijayi",
+    "email": "vijayi.shivansh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581189",
+    "urn": "2581189",
+    "name": "Sima Pradhan",
+    "email": "sima.pradhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581190",
+    "urn": "2581190",
+    "name": "Saksham Dhemiwal",
+    "email": "saksham.dhemiwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581191",
+    "urn": "2581191",
+    "name": "Vartika",
+    "email": "vartika.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581192",
+    "urn": "2581192",
+    "name": "Ayusman Nayak",
+    "email": "ayusman.nayak.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581193",
+    "urn": "2581193",
+    "name": "Vanshika",
+    "email": "vanshika.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581194",
+    "urn": "2581194",
+    "name": "Kanishk Jain",
+    "email": "kanishk.jain.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581195",
+    "urn": "2581195",
+    "name": "Aditya Singh",
+    "email": "aditya.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581196",
+    "urn": "2581196",
+    "name": "Aman kumar",
+    "email": "aman.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581197",
+    "urn": "2581197",
+    "name": "Harsh Yadav",
+    "email": "yadav.harsh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581198",
+    "urn": "2581198",
+    "name": "Priyanshu Rajput",
+    "email": "priyanshu.rajput.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581199",
+    "urn": "2581199",
+    "name": "Mayank",
+    "email": "mayank.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581200",
+    "urn": "2581200",
+    "name": "Aman Tanwar",
+    "email": "aman.tanwar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581201",
+    "urn": "2581201",
+    "name": "Kuwar Rudra Pratap",
+    "email": "rudra.pratap.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581202",
+    "urn": "2581202",
+    "name": "Sneha Das",
+    "email": "sneha.das.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581203",
+    "urn": "2581203",
+    "name": "Anurag singh",
+    "email": "anurag.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581204",
+    "urn": "2581204",
+    "name": "Aryan Bhalla",
+    "email": "aryan.bhalla.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581205",
+    "urn": "2581205",
+    "name": "Maahi Sharma",
+    "email": "maahi.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581206",
+    "urn": "2581206",
+    "name": "Abhishek Singh",
+    "email": "abhishek.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581207",
+    "urn": "2581207",
+    "name": "Vidit Sharma",
+    "email": "vidit.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581208",
+    "urn": "2581208",
+    "name": "Ishmeet Singh",
+    "email": "ishmeet.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581209",
+    "urn": "2581209",
+    "name": "Bikrant",
+    "email": "bikrant.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581210",
+    "urn": "2581210",
+    "name": "Yash Srivastava",
+    "email": "yash.srivastava.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581211",
+    "urn": "2581211",
+    "name": "Divjot Singh",
+    "email": "divjot.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581212",
+    "urn": "2581212",
+    "name": "Vedant Singhal",
+    "email": "vedant.singhal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581213",
+    "urn": "2581213",
+    "name": "Gaurav Kaushik",
+    "email": "gaurav.kaushik.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581214",
+    "urn": "2581214",
+    "name": "Tanuj Singh",
+    "email": "tanuj.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581215",
+    "urn": "2581215",
+    "name": "Yash Shrivastava",
+    "email": "yash.shrivastava.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581216",
+    "urn": "2581216",
+    "name": "Mahir Sihag",
+    "email": "mahir.sihag.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581217",
+    "urn": "2581217",
+    "name": "Nipun Swami",
+    "email": "nipun.swami.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581218",
+    "urn": "2581218",
+    "name": "Yashika Agrawal",
+    "email": "yashika.agrawal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581219",
+    "urn": "2581219",
+    "name": "Prachi Parmita",
+    "email": "prachi.parmita.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581220",
+    "urn": "2581220",
+    "name": "Arpit Sinha",
+    "email": "arpit.sinha.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581221",
+    "urn": "2581221",
+    "name": "Ayush Kumar",
+    "email": "kumar.ayush.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581222",
+    "urn": "2581222",
+    "name": "Saksham",
+    "email": "saksham.tyagi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581223",
+    "urn": "2581223",
+    "name": "Sakshi Chauhan",
+    "email": "sakshi.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581224",
+    "urn": "2581224",
+    "name": "Prince Tyagi",
+    "email": "prince.tyagi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581226",
+    "urn": "2581226",
+    "name": "Jeenal Azad",
+    "email": "jeenal.azad.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581227",
+    "urn": "2581227",
+    "name": "Priyam Singh",
+    "email": "priyam.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581228",
+    "urn": "2581228",
+    "name": "Prem Rajput",
+    "email": "prem.rajput.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581229",
+    "urn": "2581229",
+    "name": "Palak Thapar",
+    "email": "palak.thapar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581230",
+    "urn": "2581230",
+    "name": "Aditya Rawat",
+    "email": "aditya.rawat.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581231",
+    "urn": "2581231",
+    "name": "Aashika Pal",
+    "email": "aashika.pal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581232",
+    "urn": "2581232",
+    "name": "Anshika Pal",
+    "email": "anshika.pal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581233",
+    "urn": "2581233",
+    "name": "Nikhil Yadav",
+    "email": "nikhil.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581234",
+    "urn": "2581234",
+    "name": "Adarsh Mishra",
+    "email": "adarsh.mishra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581235",
+    "urn": "2581235",
+    "name": "Joy Sharma",
+    "email": "joy.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581236",
+    "urn": "2581236",
+    "name": "Gautam Bishnoi",
+    "email": "gautam.bishnoi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581237",
+    "urn": "2581237",
+    "name": "Keshav Rajvansh",
+    "email": "keshav.rajvansh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581238",
+    "urn": "2581238",
+    "name": "Arnav Motiramani",
+    "email": "arnav.motiramani.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581239",
+    "urn": "2581239",
+    "name": "Pratyush Jha",
+    "email": "pratyush.jha.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581240",
+    "urn": "2581240",
+    "name": "Vanunjai",
+    "email": "vanunjai.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581241",
+    "urn": "2581241",
+    "name": "Ratul Dhawan",
+    "email": "ratul.dhawan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581242",
+    "urn": "2581242",
+    "name": "Kshitij Mishra",
+    "email": "kshitij.mishra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581243",
+    "urn": "2581243",
+    "name": "Divyansh Jain",
+    "email": "divyansh.jain.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581244",
+    "urn": "2581244",
+    "name": "Divyanshu Pruthi",
+    "email": "divyanshu.pruthi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581245",
+    "urn": "2581245",
+    "name": "Gaurav Lohiya",
+    "email": "gaurav.lohiya.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581246",
+    "urn": "2581246",
+    "name": "Devansh Sharma",
+    "email": "devansh.sharma1.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581247",
+    "urn": "2581247",
+    "name": "Sarthak Gaur",
+    "email": "sarthak.gaur.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581248",
+    "urn": "2581248",
+    "name": "Rudraksh Roy",
+    "email": "rudraksh.roy.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581249",
+    "urn": "2581249",
+    "name": "Yogita",
+    "email": "yogita.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581250",
+    "urn": "2581250",
+    "name": "Aditya Sangwan",
+    "email": "aditya.sangwan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581251",
+    "urn": "2581251",
+    "name": "Parth Sharma",
+    "email": "parth.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581252",
+    "urn": "2581252",
+    "name": "Anushka Bhargav",
+    "email": "anushka.bhargav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581253",
+    "urn": "2581253",
+    "name": "Hirenveer Singh",
+    "email": "hirenveer.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581254",
+    "urn": "2581254",
+    "name": "Harsh Vardhan Singh",
+    "email": "harsh.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581255",
+    "urn": "2581255",
+    "name": "Ayush Gupta",
+    "email": "ayush.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581256",
+    "urn": "2581256",
+    "name": "Harsh Kherwal",
+    "email": "harsh.kherwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581257",
+    "urn": "2581257",
+    "name": "Anuj Gupta",
+    "email": "anuj.gupta.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581258",
+    "urn": "2581258",
+    "name": "Anirudh Arora",
+    "email": "anirudh.arora.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581259",
+    "urn": "2581259",
+    "name": "Harsh Yadav",
+    "email": "yadav1.harsh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581260",
+    "urn": "2581260",
+    "name": "Sujal Yadav",
+    "email": "sujal.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581261",
+    "urn": "2581261",
+    "name": "Dimple",
+    "email": "dimple.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581262",
+    "urn": "2581262",
+    "name": "Bikram Kumar",
+    "email": "bikram.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581263",
+    "urn": "2581263",
+    "name": "Piyush Barman",
+    "email": "piyush.barman.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581264",
+    "urn": "2581264",
+    "name": "Harsh Kumar",
+    "email": "kumar.harsh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581265",
+    "urn": "2581265",
+    "name": "Pihu Agrawal",
+    "email": "pihu.agrawal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581266",
+    "urn": "2581266",
+    "name": "Chirag Singh",
+    "email": "chirag.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581267",
+    "urn": "2581267",
+    "name": "Anshika Singh Rathore",
+    "email": "anshika.rathore.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581268",
+    "urn": "2581268",
+    "name": "Naman Wadhwa",
+    "email": "naman.wadhwa.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581269",
+    "urn": "2581269",
+    "name": "Deepanshu Chauhan",
+    "email": "deepanshu.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581270",
+    "urn": "2581270",
+    "name": "Raj Aryan Singh",
+    "email": "singh.raj1.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581271",
+    "urn": "2581271",
+    "name": "Mohammad Rafiuddin",
+    "email": "mohammad.rafiuddin.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581272",
+    "urn": "2581272",
+    "name": "Krish Yadav",
+    "email": "krish.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581273",
+    "urn": "2581273",
+    "name": "Krish Malik",
+    "email": "krish.malik.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581274",
+    "urn": "2581274",
+    "name": "Sankalp Arora",
+    "email": "sankalp.arora.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581276",
+    "urn": "2581276",
+    "name": "Satvik Sureka",
+    "email": "satvik.sureka.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581277",
+    "urn": "2581277",
+    "name": "Karan Singh Rajput",
+    "email": "karan.rajput.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581278",
+    "urn": "2581278",
+    "name": "Nitika Lore",
+    "email": "nitika.lore.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581279",
+    "urn": "2581279",
+    "name": "Vanshika Pandey",
+    "email": "vanshika.pandey.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581280",
+    "urn": "2581280",
+    "name": "Vishal Jha",
+    "email": "vishal.jha.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581281",
+    "urn": "2581281",
+    "name": "Sahil Singh",
+    "email": "sahil.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581283",
+    "urn": "2581283",
+    "name": "Ojas Singh",
+    "email": "ojas.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581284",
+    "urn": "2581284",
+    "name": "Chhavi Tanwar",
+    "email": "chhavi.tanwar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581285",
+    "urn": "2581285",
+    "name": "Akshansh Singh",
+    "email": "akshansh.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581286",
+    "urn": "2581286",
+    "name": "Kumar Nishkarsh",
+    "email": "kumar.nishkarsh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581287",
+    "urn": "2581287",
+    "name": "Devansh Raghuvanshi",
+    "email": "devansh.raghuvanshi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581288",
+    "urn": "2581288",
+    "name": "Shubhanshu Tripathi",
+    "email": "Shubhanshu.tripathi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581289",
+    "urn": "2581289",
+    "name": "Prem Kumar",
+    "email": "prem.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581290",
+    "urn": "2581290",
+    "name": "Aryan",
+    "email": "aryan.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581291",
+    "urn": "2581291",
+    "name": "Somya Swarup Panda",
+    "email": "somya.panda.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581292",
+    "urn": "2581292",
+    "name": "Om Pandey",
+    "email": "om.pandey.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581293",
+    "urn": "2581293",
+    "name": "Ayush",
+    "email": "ayush.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581294",
+    "urn": "2581294",
+    "name": "Atharv Singh",
+    "email": "atharv.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581295",
+    "urn": "2581295",
+    "name": "Kashish Yadav",
+    "email": "kashish.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581296",
+    "urn": "2581296",
+    "name": "Saurav Singh Rawat",
+    "email": "saurav.rawat.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581297",
+    "urn": "2581297",
+    "name": "Saurav Singh Bisht",
+    "email": "saurav.bisht.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581298",
+    "urn": "2581298",
+    "name": "Prince",
+    "email": "prince.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581299",
+    "urn": "2581299",
+    "name": "Pragati",
+    "email": "pragati.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581300",
+    "urn": "2581300",
+    "name": "Shireen",
+    "email": "shireen.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581301",
+    "urn": "2581301",
+    "name": "Harsh Vardhan Singh",
+    "email": "harsh.vardhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581302",
+    "urn": "2581302",
+    "name": "Raunak Kumar",
+    "email": "raunak.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581303",
+    "urn": "2581303",
+    "name": "Krishna Preman",
+    "email": "krishna.preman.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581304",
+    "urn": "2581304",
+    "name": "Parveen Kumar",
+    "email": "parveen.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581305",
+    "urn": "2581305",
+    "name": "Hardik Jain",
+    "email": "hardik.jain.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581306",
+    "urn": "2581306",
+    "name": "Shubham Kumar",
+    "email": "shubham.1kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581307",
+    "urn": "2581307",
+    "name": "Aman Kumar",
+    "email": "aman1.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581308",
+    "urn": "2581308",
+    "name": "Raghav Verma",
+    "email": "raghav.verma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581309",
+    "urn": "2581309",
+    "name": "Deepanshi Jha",
+    "email": "deepanshi.jha.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581310",
+    "urn": "2581310",
+    "name": "Aditi Singh",
+    "email": "aditi.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581311",
+    "urn": "2581311",
+    "name": "Aditya Singh",
+    "email": "aditya.s.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581312",
+    "urn": "2581312",
+    "name": "Priyanshu Mishra",
+    "email": "priyanshu.mishra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581313",
+    "urn": "2581313",
+    "name": "Deepanshu Mudgal",
+    "email": "deepanshu.mudgal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581314",
+    "urn": "2581314",
+    "name": "Vedansh Dhawan",
+    "email": "vedansh.dhawan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581315",
+    "urn": "2581315",
+    "name": "Nandini Kumari",
+    "email": "nandini.kumari.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581316",
+    "urn": "2581316",
+    "name": "Veer Pratap Singh",
+    "email": "veer.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581317",
+    "urn": "2581317",
+    "name": "Khushi Ganguly",
+    "email": "khushi.ganguly.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581318",
+    "urn": "2581318",
+    "name": "Vansh Mahajan",
+    "email": "vansh.mahajan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581319",
+    "urn": "2581319",
+    "name": "Mannat Sachdeva",
+    "email": "mannat.sachdeva.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581320",
+    "urn": "2581320",
+    "name": "Dev Shankar Yadav",
+    "email": "dev.yadav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581321",
+    "urn": "2581321",
+    "name": "Shivam",
+    "email": "shivam1.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581323",
+    "urn": "2581323",
+    "name": "Ayush Kumar",
+    "email": "ayush.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581324",
+    "urn": "2581324",
+    "name": "Kanhaiya Raj",
+    "email": "kanhaiya.raj.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581325",
+    "urn": "2581325",
+    "name": "Sankalp Rawat",
+    "email": "sankalp.rawat.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581326",
+    "urn": "2581326",
+    "name": "Harry Asija",
+    "email": "harry.asija.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581327",
+    "urn": "2581327",
+    "name": "Lalit Verma",
+    "email": "lalit.verma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581328",
+    "urn": "2581328",
+    "name": "Inu Chetry",
+    "email": "inu.chetry.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581329",
+    "urn": "2581329",
+    "name": "Nikhil Kale",
+    "email": "nikhil.kale.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581330",
+    "urn": "2581330",
+    "name": "Shamad Khan",
+    "email": "shamad.khan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581331",
+    "urn": "2581331",
+    "name": "Vardan",
+    "email": "vardan.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581332",
+    "urn": "2581332",
+    "name": "Yash Pandey",
+    "email": "yash.pandey.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581333",
+    "urn": "2581333",
+    "name": "Rishi Yadav",
+    "email": "rishi.yadav1.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581334",
+    "urn": "2581334",
+    "name": "Yuvraj Jagga",
+    "email": "yuvraj.jagga.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581335",
+    "urn": "2581335",
+    "name": "Kavish Sehgal",
+    "email": "kavish.sehgal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581336",
+    "urn": "2581336",
+    "name": "Bhavya Choudhary",
+    "email": "bhavya.choudhary.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581337",
+    "urn": "2581337",
+    "name": "Bakhteyar Hassan",
+    "email": "bakhteyar.hassan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581339",
+    "urn": "2581339",
+    "name": "Nipun",
+    "email": "nipun.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581340",
+    "urn": "2581340",
+    "name": "Armaandeep Singh",
+    "email": "armaan.deep.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581341",
+    "urn": "2581341",
+    "name": "Nirbhay Thakran",
+    "email": "nirbhay.thakran.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581342",
+    "urn": "2581342",
+    "name": "Pranav Sharma",
+    "email": "pranav.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581343",
+    "urn": "2581343",
+    "name": "Sumit Sharma",
+    "email": "sumit.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581344",
+    "urn": "2581344",
+    "name": "Mayank",
+    "email": "mayank.1.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581345",
+    "urn": "2581345",
+    "name": "Kanchan Sharma",
+    "email": "kanchan.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581346",
+    "urn": "2581346",
+    "name": "Amit Singh Bhatti",
+    "email": "amit.bhatti.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581347",
+    "urn": "2581347",
+    "name": "Milan Lakra",
+    "email": "milan.lakra.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581348",
+    "urn": "2581348",
+    "name": "Advik Goswami",
+    "email": "advik.goswami.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581349",
+    "urn": "2581349",
+    "name": "Dhruv Yadav",
+    "email": "dhruv.yadav2.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581350",
+    "urn": "2581350",
+    "name": "Parth Singh Chauhan",
+    "email": "parth.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581351",
+    "urn": "2581351",
+    "name": "Nimisha",
+    "email": "nimisha.punetha.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581352",
+    "urn": "2581352",
+    "name": "Ayush Chauhan",
+    "email": "ayush.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581353",
+    "urn": "2581353",
+    "name": "Vidhur Gaur",
+    "email": "vidhur.gaur.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581354",
+    "urn": "2581354",
+    "name": "Navya Sharma",
+    "email": "navya.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "B",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581355",
+    "urn": "2581355",
+    "name": "Kshitij",
+    "email": "kshitij.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581356",
+    "urn": "2581356",
+    "name": "Shubhas",
+    "email": "shubhas.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581357",
+    "urn": "2581357",
+    "name": "Rudra Grover",
+    "email": "rudra.grover.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581358",
+    "urn": "2581358",
+    "name": "Vishnu Singh",
+    "email": "vishnu.thakur.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581359",
+    "urn": "2581359",
+    "name": "Palak Rai",
+    "email": "palak.rai.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581360",
+    "urn": "2581360",
+    "name": "Vishal Singh",
+    "email": "vishal.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581361",
+    "urn": "2581361",
+    "name": "Parth Dagar",
+    "email": "parth.dagar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581362",
+    "urn": "2581362",
+    "name": "Yash Narsingh Maurya",
+    "email": "yash.maurya.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581363",
+    "urn": "2581363",
+    "name": "Mehak Dhawan",
+    "email": "mehak.dhawan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581364",
+    "urn": "2581364",
+    "name": "Dipender Singh Chauhan",
+    "email": "dipender.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581365",
+    "urn": "2581365",
+    "name": "Dev Paliwal",
+    "email": "dev.paliwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581366",
+    "urn": "2581366",
+    "name": "Yash Singh",
+    "email": "yash.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581367",
+    "urn": "2581367",
+    "name": "Trijal Mohan",
+    "email": "trijal.mohan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581368",
+    "urn": "2581368",
+    "name": "Ankit Biswas",
+    "email": "ankit.biswas.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581369",
+    "urn": "2581369",
+    "name": "Annu Shree",
+    "email": "Annu.shree1.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581370",
+    "urn": "2581370",
+    "name": "Sanchita Jarwal",
+    "email": "sanchita.jarwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581371",
+    "urn": "2581371",
+    "name": "Aksh Rana",
+    "email": "aksh.rana.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581373",
+    "urn": "2581373",
+    "name": "Rudrika Sharma",
+    "email": "rudrika.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581374",
+    "urn": "2581374",
+    "name": "Akansha",
+    "email": "akansha.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581375",
+    "urn": "2581375",
+    "name": "Vansh",
+    "email": "vansh.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581376",
+    "urn": "2581376",
+    "name": "G. Om",
+    "email": "g.om.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581377",
+    "urn": "2581377",
+    "name": "Sahil beniwal",
+    "email": "sahil.beniwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581378",
+    "urn": "2581378",
+    "name": "Atharva Gill",
+    "email": "atharv.gill.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581379",
+    "urn": "2581379",
+    "name": "Kartavya",
+    "email": "kartavya.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581380",
+    "urn": "2581380",
+    "name": "Gulfan Khan",
+    "email": "gulfan.khan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581381",
+    "urn": "2581381",
+    "name": "Prince Kumar",
+    "email": "prince.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581382",
+    "urn": "2581382",
+    "name": "Ayush Negi",
+    "email": "ayush.negi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581383",
+    "urn": "2581383",
+    "name": "Preeti Sharma",
+    "email": "preeti.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581384",
+    "urn": "2581384",
+    "name": "Varun Thakran",
+    "email": "varun.thakran.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581385",
+    "urn": "2581385",
+    "name": "Adarsh Ranjan",
+    "email": "adarsh.ranjan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581386",
+    "urn": "2581386",
+    "name": "Krish Kumar",
+    "email": "krish.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581387",
+    "urn": "2581387",
+    "name": "Kanishka",
+    "email": "kanishka.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581389",
+    "urn": "2581389",
+    "name": "Saurav Singh Bisht",
+    "email": "bisht.saurav.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581390",
+    "urn": "2581390",
+    "name": "Lakshay",
+    "email": "lakshay.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581391",
+    "urn": "2581391",
+    "name": "Anshu Singh",
+    "email": "anshu.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581392",
+    "urn": "2581392",
+    "name": "Shivam Singh",
+    "email": "singh.shivam.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581393",
+    "urn": "2581393",
+    "name": "Kapil Chaudhary",
+    "email": "kapil.chaudhary.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581394",
+    "urn": "2581394",
+    "name": "Omkar Dhal",
+    "email": "omkar.dhal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581395",
+    "urn": "2581395",
+    "name": "Abhijit Pandey",
+    "email": "abhijit.pandey.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581396",
+    "urn": "2581396",
+    "name": "Pravar Jain",
+    "email": "pravar.jain.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581397",
+    "urn": "2581397",
+    "name": "Tanish Singh",
+    "email": "tanish.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581398",
+    "urn": "2581398",
+    "name": "Aryan Jain",
+    "email": "aryan.jain.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "E",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581399",
+    "urn": "2581399",
+    "name": "Tanpreet Saluja",
+    "email": "tanpreet.saluja.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581400",
+    "urn": "2581400",
+    "name": "Nishchay Raman",
+    "email": "nishchay.raman.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581401",
+    "urn": "2581401",
+    "name": "Aarav Khatri",
+    "email": "aarav.khatri.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581402",
+    "urn": "2581402",
+    "name": "Tushar Khan",
+    "email": "tushar.khan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581403",
+    "urn": "2581403",
+    "name": "Kush Arora",
+    "email": "kush.arora.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581404",
+    "urn": "2581404",
+    "name": "Saksham Sharma",
+    "email": "saksham.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581405",
+    "urn": "2581405",
+    "name": "Yatharth Kapoor",
+    "email": "yatharth.kapoor.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581406",
+    "urn": "2581406",
+    "name": "Aditya Chaturvedi",
+    "email": "aditya.chaturvedi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581407",
+    "urn": "2581407",
+    "name": "Prince Acharya",
+    "email": "prince.acharya.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581408",
+    "urn": "2581408",
+    "name": "Satyam Kumar",
+    "email": "satyam.kumar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581409",
+    "urn": "2581409",
+    "name": "Sahaj Preet Singh",
+    "email": "sahaj.preet.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581410",
+    "urn": "2581410",
+    "name": "Nitin upadhyay",
+    "email": "nitin.upadhyay.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581411",
+    "urn": "2581411",
+    "name": "Jagrit Ahuja",
+    "email": "jagrit.ahuja.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581413",
+    "urn": "2581413",
+    "name": "Rahul Gowthaman",
+    "email": "rahul.gowthaman.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581414",
+    "urn": "2581414",
+    "name": "Shivam Khanna",
+    "email": "shivam.khanna.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581419",
+    "urn": "2581419",
+    "name": "Samarth Mahajan",
+    "email": "samarth.mahajan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581420",
+    "urn": "2581420",
+    "name": "Aksh",
+    "email": "aksh.2025.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581423",
+    "urn": "2581423",
+    "name": "Pratham Choudhary",
+    "email": "pratham.choudhary.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581424",
+    "urn": "2581424",
+    "name": "Ayush Sharma",
+    "email": "ayush.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581426",
+    "urn": "2581426",
+    "name": "Deepak Tanwar",
+    "email": "deepak1.tanwar.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581428",
+    "urn": "2581428",
+    "name": "Bipasha Banerjee",
+    "email": "bipasha.banerjee.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "C",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581429",
+    "urn": "2581429",
+    "name": "Krish Kunal",
+    "email": "krish.kunal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581430",
+    "urn": "2581430",
+    "name": "Piyush Kumar",
+    "email": "kumar.piyush.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581434",
+    "urn": "2581434",
+    "name": "Piyush Chauhan",
+    "email": "piyush.chauhan.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581439",
+    "urn": "2581439",
+    "name": "Zaid Saifi",
+    "email": "zaid.saifi.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581440",
+    "urn": "2581440",
+    "name": "Pratul Singh",
+    "email": "pratul.singh.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581441",
+    "urn": "2581441",
+    "name": "Yash Sharma",
+    "email": "yash.sharma.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "A",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581442",
+    "urn": "2581442",
+    "name": "Yash Kumar Khatana",
+    "email": "yash.khatana.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "F",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581445",
+    "urn": "2581445",
+    "name": "Khwaish Soni",
+    "email": "khwaish.soni.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581446",
+    "urn": "2581446",
+    "name": "Suhani Agarwal",
+    "email": "suhani.agarwal.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "D",
+    "batch": "2025-29"
+  },
+  {
+    "id": "stu-2581448",
+    "urn": "2581448",
+    "name": "DEVI LALITHA MEDAPATI",
+    "email": "devi.medapati.ug25@iilm.edu",
+    "course": "B.Tech CSE",
+    "semester": 1,
+    "section": "G",
+    "batch": "2025-29"
+  }
+]

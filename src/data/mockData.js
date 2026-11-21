@@ -167,19 +167,12 @@ export const consumables = [
   { id: 'c-53', sno: 53, name: 'White Type-C Cable', folio: 31, billNo: 36, date: '9/23/25', vendor: 'Sapro electronics', gst: 18, totalStock: 2, availableStock: 2, unitPrice: 100, totalAmount: 200, category: 'Cables', type: 'consumable' },
 ];
 
+import masterStudents from './students_master.json';
+
 // Combined for general use (student catalog shows both)
 export const items = [...nonConsumables, ...consumables];
 
-export const initialStudents = [
-  { id: 'stu-1', urn: '2581008', name: 'Aryan Sharma', email: '2581008@iilm.edu', course: 'B.Tech CSE', semester: 5, section: 'A' },
-  { id: 'stu-2', urn: '2581015', name: 'Priya Patel', email: '2581015@iilm.edu', course: 'B.Tech ECE', semester: 5, section: 'B' },
-  { id: 'stu-3', urn: '2581022', name: 'Rahul Singh', email: '2581022@iilm.edu', course: 'B.Tech CSE', semester: 3, section: 'A' },
-  { id: 'stu-4', urn: '2581031', name: 'Sneha Gupta', email: '2581031@iilm.edu', course: 'B.Tech IT', semester: 5, section: 'C' },
-  { id: 'stu-5', urn: '2581045', name: 'Vikram Reddy', email: '2581045@iilm.edu', course: 'B.Tech ECE', semester: 7, section: 'B' },
-  { id: 'stu-6', urn: '2581056', name: 'Anjali Mehta', email: '2581056@iilm.edu', course: 'B.Tech CSE', semester: 3, section: 'C' },
-  { id: 'stu-7', urn: '2581067', name: 'Rohan Verma', email: '2581067@iilm.edu', course: 'B.Tech IT', semester: 7, section: 'A' },
-  { id: 'stu-8', urn: '2581078', name: 'Kavya Nair', email: '2581078@iilm.edu', course: 'B.Tech ECE', semester: 5, section: 'A' },
-];
+export const initialStudents = masterStudents;
 
 export const students = initialStudents.map(s => ({ ...s, rollNo: s.urn }));
 
@@ -188,22 +181,43 @@ export const staffAccounts = [
     id: 'staff-1',
     name: 'Prof. Puja Acharya',
     email: 'puja.acharya@iilm.edu',
-    designation: 'Lab Teacher',
-    department: 'IoT & Robotics Lab',
+    designation: 'Lab In-Charge & Section C Coordinator',
+    department: 'IoT & Robotics Foundation Lab',
   },
   {
     id: 'staff-2',
     name: 'Prof. Vardaan Pajnoo',
     email: 'vardaan.pajnoo@iilm.edu',
     designation: 'Lab In-Charge',
-    department: 'IoT & Robotics Lab',
+    department: 'IoT & Robotics Foundation Lab',
   },
   {
     id: 'staff-3',
     name: 'Dr. Ramesh Kumar',
     email: 'ramesh.kumar1@iilm.edu',
     designation: 'Lab In-Charge',
-    department: 'IoT & Robotics Lab',
+    department: 'IoT & Robotics Foundation Lab',
+  },
+  {
+    id: 'staff-4',
+    name: 'Dr. Sonam Lata',
+    email: 'sonam.lata@iilm.edu',
+    designation: 'B.Tech 3rd Sem Section A Coordinator',
+    department: 'School of Computer Science & Engineering',
+  },
+  {
+    id: 'staff-5',
+    name: 'Dr. Naved',
+    email: 'naved.ahmad@iilm.edu',
+    designation: 'B.Tech 3rd Sem Section B Coordinator',
+    department: 'School of Computer Science & Engineering',
+  },
+  {
+    id: 'staff-6',
+    name: 'Dr. Anurag Jain',
+    email: 'anurag.jain@iilm.edu',
+    designation: 'B.Tech 5th Sem Program Coordinator',
+    department: 'School of Computer Science & Engineering',
   },
 ];
 
