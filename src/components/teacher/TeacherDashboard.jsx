@@ -17,7 +17,9 @@ import {
   ChevronRight,
   Box,
   Layers,
-  X
+  X,
+  ShieldCheck,
+  KeyRound
 } from 'lucide-react';
 
 function formatDate(d) {
@@ -121,6 +123,26 @@ export default function TeacherDashboard() {
           color={overdue.length > 0 ? 'red' : 'slate'}
           onClick={() => navigate('/teacher/issued')}
         />
+      </div>
+
+      {/* LAB CREDENTIAL SECURITY BANNER (Option 2 Protocol) */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 bg-gradient-to-r from-blue-50/80 via-indigo-50/50 to-slate-50 border border-blue-200/70 rounded-2xl">
+        <div className="flex items-center gap-3">
+          <div className="p-2.5 bg-blue-600 text-white rounded-xl shadow-md shadow-blue-500/20 shrink-0">
+            <ShieldCheck className="w-5 h-5" />
+          </div>
+          <div>
+            <h4 className="text-sm font-semibold text-slate-800">Lab Credential Security Protocol</h4>
+            <p className="text-xs text-slate-500">Authorize student password resets or issue 1-time lab passcodes for 624 university students.</p>
+          </div>
+        </div>
+        <button
+          onClick={() => navigate('/teacher/security')}
+          className="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-xl shadow-sm transition-all w-fit cursor-pointer shrink-0"
+        >
+          <KeyRound className="w-3.5 h-3.5" />
+          Manage Student Passwords
+        </button>
       </div>
 
       {/* 2. INVENTORY BY CATEGORY (Moved ABOVE Pending Requests & fully clickable) */}

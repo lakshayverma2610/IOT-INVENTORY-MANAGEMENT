@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from 'react-router-dom';
-import { Home, Package, ClipboardList, ClipboardCheck, Boxes, PackageCheck, Cpu, LogOut } from 'lucide-react';
+import { Home, Package, ClipboardList, ClipboardCheck, Boxes, PackageCheck, Cpu, LogOut, KeyRound } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 
 const studentNav = [
@@ -13,6 +13,7 @@ const teacherNav = [
   { to: '/teacher/requests', label: 'Requests', icon: ClipboardCheck },
   { to: '/teacher/inventory', label: 'Inventory', icon: Boxes },
   { to: '/teacher/issued', label: 'Issued Items', icon: PackageCheck },
+  { to: '/teacher/security', label: 'Student Passwords', icon: KeyRound },
 ];
 
 export default function Sidebar() {

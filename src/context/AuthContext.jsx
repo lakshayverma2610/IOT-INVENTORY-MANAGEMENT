@@ -8,8 +8,9 @@ const AuthContext = createContext(null);
 const STORAGE_KEY_STUDENTS = 'iilm_iot_students_v5';
 const STORAGE_KEY_STAFF = 'iilm_iot_staff_v5';
 const STORAGE_KEY_SESSION = 'iilm_iot_session_v5';
+const STORAGE_KEY_PASSCODES = 'iilm_iot_lab_passcodes_v1';
 
-// Accepted initial passwords for faculty accounts
+// Known accepted initial passwords for faculty accounts
 const ACCEPTED_STAFF_PASSWORDS = {
   'puja.acharya@iilm.edu': ['Puja@IILM2025', 'puja123', 'iilm123', 'teacher123', '123456'],
   'vardaan.pajnoo@iilm.edu': ['Vardaan@IILM2025', 'vardaan123', 'iilm123', '123456'],
@@ -19,11 +20,11 @@ const ACCEPTED_STAFF_PASSWORDS = {
   'anurag.jain@iilm.edu': ['Anurag@IILM2025', 'anurag123', 'iilm123', 'teacher123', '123456'],
 };
 
-// Department Security Keys for administrative resets (Room B2-105)
+// Department Security Keys for administrative faculty resets
 const FACULTY_SECURITY_KEYS = ['IILM@FACULTY2024', 'IOT@CSE2024', 'IILM@B2105', 'LAB@INCHARGE'];
 
-// Lab In-Charge Physical Override Passcodes (issued by Prof. Puja Acharya if a student loses phone access)
-const LAB_OVERRIDE_KEYS = ['IOT-LAB-SECURE', 'IILM@LAB2024', 'PUJA@IOT2024', '2024LAB'];
+// Lab In-Charge Universal Master Authorization Keys (Room B2-105)
+const LAB_MASTER_KEYS = ['IOT-LAB-SECURE', 'PUJA@B2105', 'IILM@LAB2024', 'B2105@LAB'];
 
 // Accepted default passwords for sample students
 const ACCEPTED_STUDENT_PASSWORDS = ['Student@2581', 'Student@2481', 'student123', '123456', 'iilm123'];
@@ -46,7 +47,6 @@ export function AuthProvider({ children }) {
             const passHash = await hashPassword(primaryPass);
             staffWithHashes.push({
               ...s,
-              phoneLast4: s.phoneLast4 || '0000',
               passwordHash: passHash,
               customPassword: null,
             });
@@ -54,15 +54,13 @@ export function AuthProvider({ children }) {
           localStorage.setItem(STORAGE_KEY_STAFF, JSON.stringify(staffWithHashes));
         }
 
-        // Init Students with Phone Last 4 Digits from university records
+        // Init Students from 624 university records
         let storedStudents = localStorage.getItem(STORAGE_KEY_STUDENTS);
         if (!storedStudents) {
           const studentDefaultHash = await hashPassword('Student@2581');
           const studentsWithHashes = initialStudents.map(s => ({
             ...s,
             rollNo: s.urn,
-            phoneLast4: s.phoneLast4 || String(s.urn).slice(-4),
-            parentPhoneLast4: s.parentPhoneLast4 || null,
             passwordHash: studentDefaultHash,
             activated: true,
           }));
@@ -106,7 +104,6 @@ export function AuthProvider({ children }) {
       return { success: false, message: 'Please enter your password.' };
     }
 
-    // Auto-detect role if user typed an email or URN in the other tab
     let effectiveRole = selectedRole;
     if (rawId.includes('@')) {
       effectiveRole = 'teacher';
@@ -133,7 +130,6 @@ export function AuthProvider({ children }) {
         if (orig) {
           staffMember = {
             ...orig,
-            phoneLast4: orig.phoneLast4 || '0000',
             passwordHash: await hashPassword(ACCEPTED_STAFF_PASSWORDS[orig.email]?.[0] || 'IILM@B2105'),
           };
         }
@@ -193,8 +189,6 @@ export function AuthProvider({ children }) {
           student = {
             ...pre,
             rollNo: pre.urn,
-            phoneLast4: pre.phoneLast4 || String(pre.urn).slice(-4),
-            parentPhoneLast4: pre.parentPhoneLast4 || null,
             passwordHash: await hashPassword('Student@2581'),
             activated: true,
           };
@@ -218,7 +212,7 @@ export function AuthProvider({ children }) {
       if (!isHashMatch && !isAcceptedDefault && !isUrnPass) {
         return {
           success: false,
-          message: 'Incorrect password. Please try again or use the Reset Password option below.',
+          message: 'Incorrect password. Please try again or request a reset from Lab In-Charge (Room B2-105).',
         };
       }
 
@@ -240,7 +234,7 @@ export function AuthProvider({ children }) {
     }
   };
 
-  const activateStudent = async ({ urn, name, course, semester, section, password, phone }) => {
+  const activateStudent = async ({ urn, name, course, semester, section, password }) => {
     const trimmedURN = String(urn || '').trim();
     if (!isValidURN(trimmedURN)) {
       return { success: false, message: 'URN must be exactly 7 digits (e.g. 2581008).' };
@@ -251,8 +245,6 @@ export function AuthProvider({ children }) {
     if (!password || password.length < 4) {
       return { success: false, message: 'Password must be at least 4 characters.' };
     }
-
-    const cleanPhoneLast4 = phone ? String(phone).replace(/\D/g, '').slice(-4) : trimmedURN.slice(-4);
 
     let storedStudents = [];
     try {
@@ -273,7 +265,6 @@ export function AuthProvider({ children }) {
       course: course || 'B.Tech CSE',
       semester: parseInt(semester, 10) || 1,
       section: (section || 'A').toUpperCase(),
-      phoneLast4: cleanPhoneLast4,
       passwordHash,
       activated: true,
       activatedAt: new Date().toISOString(),
@@ -364,50 +355,76 @@ export function AuthProvider({ children }) {
     }
   };
 
-  // Masked hint from university records
-  const getMaskedHint = (identifier, targetRole) => {
-    const rawId = String(identifier || '').trim();
-    if (!rawId) return null;
+  // FACULTY ACTION: Generate 1-Time Lab Authorization Passcode for a student
+  const generateStudentPasscode = (urn) => {
+    const cleanURN = String(urn || '').trim();
+    if (!cleanURN) return { success: false, message: 'URN is required.' };
 
-    if (targetRole === 'teacher') {
-      let storedStaff = [];
-      try {
-        storedStaff = JSON.parse(localStorage.getItem(STORAGE_KEY_STAFF) || '[]');
-      } catch {
-        storedStaff = [];
-      }
-      const staff = storedStaff.find(s => s.email.toLowerCase() === rawId.toLowerCase()) ||
-                    staffAccounts.find(s => s.email.toLowerCase() === rawId.toLowerCase());
-      if (!staff) return null;
-      return {
-        name: staff.name,
-        maskedPhone: staff.phoneLast4 ? `•••••• ${staff.phoneLast4}` : 'Registered Phone',
-      };
-    } else {
-      if (!/^\d{7}$/.test(rawId)) return null;
-      let storedStudents = [];
-      try {
-        storedStudents = JSON.parse(localStorage.getItem(STORAGE_KEY_STUDENTS) || '[]');
-      } catch {
-        storedStudents = [];
-      }
-      let student = storedStudents.find(s => String(s.urn) === rawId);
-      if (!student) {
-        student = initialStudents.find(s => String(s.urn) === rawId);
-      }
-      if (!student) return null;
+    const randomDigits = Math.floor(100000 + Math.random() * 900000).toString();
+    const passcode = `LAB-${randomDigits}`;
 
-      const p4 = student.phoneLast4 || String(student.urn).slice(-4);
-      return {
-        name: student.name,
-        maskedPhone: `•••••• ${p4}`,
-        maskedParent: student.parentPhoneLast4 ? `•••••• ${student.parentPhoneLast4}` : null,
-      };
+    let passcodes = {};
+    try {
+      passcodes = JSON.parse(localStorage.getItem(STORAGE_KEY_PASSCODES) || '{}');
+    } catch {
+      passcodes = {};
     }
+
+    passcodes[cleanURN] = {
+      code: passcode,
+      generatedAt: new Date().toISOString(),
+      expiresAt: Date.now() + 30 * 60 * 1000, // Valid 30 minutes
+    };
+
+    localStorage.setItem(STORAGE_KEY_PASSCODES, JSON.stringify(passcodes));
+    return { success: true, passcode, expiresAt: passcodes[cleanURN].expiresAt };
   };
 
-  // ZERO-COST, ZERO-SMS SECURE DATABASE VERIFICATION
-  // Uses confidential university records (registered mobile last 4 digits) or Lab In-Charge override.
+  // FACULTY ACTION: 1-Click Direct Reset from Teacher Dashboard
+  const adminResetStudentPassword = async (urn, newPassword = 'Student@2581') => {
+    const cleanURN = String(urn || '').trim();
+    if (!cleanURN) return { success: false, message: 'URN is required.' };
+
+    let storedStudents = [];
+    try {
+      storedStudents = JSON.parse(localStorage.getItem(STORAGE_KEY_STUDENTS) || '[]');
+    } catch {
+      storedStudents = [];
+    }
+
+    let idx = storedStudents.findIndex(s => String(s.urn) === cleanURN);
+    const newHash = await hashPassword(newPassword);
+
+    if (idx === -1) {
+      const pre = initialStudents.find(s => String(s.urn) === cleanURN);
+      if (pre) {
+        storedStudents.push({
+          ...pre,
+          rollNo: pre.urn,
+          passwordHash: newHash,
+          activated: true,
+        });
+        idx = storedStudents.length - 1;
+      }
+    }
+
+    if (idx === -1) {
+      return { success: false, message: `Student record with URN ${cleanURN} not found.` };
+    }
+
+    storedStudents[idx].passwordHash = newHash;
+    storedStudents[idx].customPassword = newPassword;
+    localStorage.setItem(STORAGE_KEY_STUDENTS, JSON.stringify(storedStudents));
+
+    return {
+      success: true,
+      message: `Password for URN ${cleanURN} has been successfully reset to "${newPassword}".`,
+    };
+  };
+
+  // OPTION 2: PHYSICAL LAB SECURITY RESET PROTOCOL
+  // Student resets REQUIRE an authorized passcode issued by the Lab In-Charge (Room B2-105)
+  // or a master lab security key.
   const resetPassword = async ({ identifier, verification, newPassword, role: targetRole }) => {
     const rawId = String(identifier || '').trim();
     const cleanVerif = String(verification || '').trim();
@@ -436,7 +453,6 @@ export function AuthProvider({ children }) {
         if (orig) {
           storedStaff.push({
             ...orig,
-            phoneLast4: orig.phoneLast4 || '0000',
             passwordHash: newHash,
           });
           idx = storedStaff.length - 1;
@@ -447,17 +463,12 @@ export function AuthProvider({ children }) {
         return { success: false, message: `No faculty record found for "${rawId}".` };
       }
 
-      const staffMember = storedStaff[idx];
-      const p4 = staffMember.phoneLast4 || '0000';
-      const cleanDigits = cleanVerif.replace(/\D/g, '');
-
-      const isPhoneMatch = cleanDigits.length === 4 && cleanDigits === p4;
       const isKeyMatch = FACULTY_SECURITY_KEYS.some(k => k.toLowerCase() === cleanVerif.toLowerCase());
 
-      if (!isPhoneMatch && !isKeyMatch) {
+      if (!isKeyMatch) {
         return {
           success: false,
-          message: 'Verification failed: Please enter the last 4 digits of your phone registered with the university or Faculty Key.',
+          message: 'Verification failed: Invalid Department Security Key.',
         };
       }
 
@@ -466,9 +477,7 @@ export function AuthProvider({ children }) {
       localStorage.setItem(STORAGE_KEY_STAFF, JSON.stringify(storedStaff));
       return { success: true, message: 'Faculty password has been reset successfully. You can now sign in.' };
     } else {
-      // STUDENT RESET LOGIC:
-      // Peer-proof: Checks confidential registered phone digits from university records.
-      // Classmates only know URN and email; they DO NOT know private phone digits.
+      // STUDENT RESET: Physical Lab Security Custody Model
       const cleanURN = rawId;
 
       if (!isValidURN(cleanURN)) {
@@ -491,8 +500,6 @@ export function AuthProvider({ children }) {
           student = {
             ...pre,
             rollNo: pre.urn,
-            phoneLast4: pre.phoneLast4 || String(pre.urn).slice(-4),
-            parentPhoneLast4: pre.parentPhoneLast4 || null,
             passwordHash: newHash,
             activated: true,
           };
@@ -505,18 +512,28 @@ export function AuthProvider({ children }) {
         return { success: false, message: `No student record found for URN ${cleanURN}.` };
       }
 
-      const p4 = student.phoneLast4 || String(student.urn).slice(-4);
-      const parentP4 = student.parentPhoneLast4;
-      const cleanDigits = cleanVerif.replace(/\D/g, '');
+      // Check if verification matches active Lab Passcode issued by Teacher
+      let passcodes = {};
+      try {
+        passcodes = JSON.parse(localStorage.getItem(STORAGE_KEY_PASSCODES) || '{}');
+      } catch {
+        passcodes = {};
+      }
 
-      const isStudentPhoneMatch = cleanDigits.length === 4 && cleanDigits === p4;
-      const isParentPhoneMatch = parentP4 && cleanDigits.length === 4 && cleanDigits === parentP4;
-      const isLabOverride = LAB_OVERRIDE_KEYS.some(k => k.toLowerCase() === cleanVerif.toLowerCase());
+      const activeRecord = passcodes[cleanURN];
+      const isDynamicPasscodeMatch =
+        activeRecord &&
+        (activeRecord.code.toLowerCase() === cleanVerif.toLowerCase() ||
+         activeRecord.code.replace(/\D/g, '') === cleanVerif.replace(/\D/g, '')) &&
+        Date.now() < activeRecord.expiresAt;
 
-      if (!isStudentPhoneMatch && !isParentPhoneMatch && !isLabOverride) {
+      // Check Master Lab Override Keys
+      const isMasterKeyMatch = LAB_MASTER_KEYS.some(k => k.toLowerCase() === cleanVerif.toLowerCase());
+
+      if (!isDynamicPasscodeMatch && !isMasterKeyMatch) {
         return {
           success: false,
-          message: 'Security Verification Failed: The digits entered do not match the registered phone number in IILM records. Classmates cannot reset your account using roll number or name alone.',
+          message: 'Security Authorization Failed: Invalid or expired Lab Passcode. Under IoT Lab Protocol, password resets must be authorized by Prof. Puja Acharya (Room B2-105) to protect lab hardware from unauthorized requisition tampering.',
         };
       }
 
@@ -524,9 +541,15 @@ export function AuthProvider({ children }) {
       storedStudents[studentIndex].customPassword = newPassword;
       localStorage.setItem(STORAGE_KEY_STUDENTS, JSON.stringify(storedStudents));
 
+      // Invalidate used passcode
+      if (passcodes[cleanURN]) {
+        delete passcodes[cleanURN];
+        localStorage.setItem(STORAGE_KEY_PASSCODES, JSON.stringify(passcodes));
+      }
+
       return {
         success: true,
-        message: 'Identity verified successfully! Your password has been reset. You can now sign in.',
+        message: 'Lab In-Charge authorization verified! Your password has been successfully updated. You can now sign in.',
       };
     }
   };
@@ -547,7 +570,8 @@ export function AuthProvider({ children }) {
         activateStudent,
         changePassword,
         resetPassword,
-        getMaskedHint,
+        generateStudentPasscode,
+        adminResetStudentPassword,
         logout,
       }}
     >

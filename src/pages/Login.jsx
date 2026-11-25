@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import {
@@ -13,6 +13,7 @@ import {
   CheckCircle2,
   AlertCircle,
   Lock,
+  Building2,
 } from 'lucide-react';
 import { isValidURN } from '../utils/security';
 
@@ -40,7 +41,6 @@ export default function Login() {
   const [activationForm, setActivationForm] = useState({
     urn: '',
     name: '',
-    phone: '',
     course: 'B.Tech CSE',
     semester: 1,
     section: 'A',
@@ -48,7 +48,7 @@ export default function Login() {
     confirmPassword: '',
   });
 
-  // Password Reset States
+  // Password Reset States (Physical Lab In-Charge Custody Protocol)
   const [resetForm, setResetForm] = useState({
     identifier: '',
     verification: '',
@@ -56,14 +56,11 @@ export default function Login() {
     confirmPassword: '',
   });
 
-  // Dynamic Identity Hint from University Database
-  const [detectedHint, setDetectedHint] = useState(null);
-
   const [error, setError] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const { login, activateStudent, resetPassword, getMaskedHint } = useAuth();
+  const { login, activateStudent, resetPassword } = useAuth();
   const navigate = useNavigate();
 
   // Smart input change handler (auto-switches role if email is typed)
@@ -74,25 +71,6 @@ export default function Login() {
       setRole('teacher');
     }
   };
-
-  // Check identity hint when user types their URN or email in reset form
-  useEffect(() => {
-    if (!isResetting) {
-      setDetectedHint(null);
-      return;
-    }
-
-    const rawId = (resetForm.identifier || '').trim();
-    if (role === 'student' && /^\d{7}$/.test(rawId)) {
-      const hint = getMaskedHint(rawId, 'student');
-      setDetectedHint(hint);
-    } else if (role === 'teacher' && rawId.includes('@')) {
-      const hint = getMaskedHint(rawId, 'teacher');
-      setDetectedHint(hint);
-    } else {
-      setDetectedHint(null);
-    }
-  }, [resetForm.identifier, role, isResetting]);
 
   const handleResetPassword = async (e) => {
     if (e && e.preventDefault) e.preventDefault();
@@ -111,8 +89,8 @@ export default function Login() {
     if (!verif) {
       setError(
         role === 'teacher'
-          ? 'Please enter the last 4 digits of your registered phone or Faculty Security Key.'
-          : 'Please enter the last 4 digits of your registered mobile number (or father’s mobile on record).'
+          ? 'Please enter the Department Security Key.'
+          : 'Please enter the Lab Authorization Passcode issued by Lab In-Charge (Room B2-105).'
       );
       return;
     }
@@ -140,13 +118,12 @@ export default function Login() {
         setPassword('');
         setIdentifier(id);
         setResetForm({ identifier: '', verification: '', newPassword: '', confirmPassword: '' });
-        setDetectedHint(null);
       } else {
         setError(res.message);
       }
     } catch {
       setLoading(false);
-      setError('Failed to reset password. Please check your verification digits.');
+      setError('Failed to reset password. Please check your verification credentials.');
     }
   };
 
@@ -258,7 +235,6 @@ export default function Login() {
                 setIsActivating(false);
                 setIsResetting(false);
                 setError('');
-                setDetectedHint(null);
               }}
               className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                 role === 'student'
@@ -276,7 +252,6 @@ export default function Login() {
                 setIsActivating(false);
                 setIsResetting(false);
                 setError('');
-                setDetectedHint(null);
               }}
               className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                 role === 'teacher'
@@ -340,20 +315,6 @@ export default function Login() {
                   onChange={e => setActivationForm({ ...activationForm, name: e.target.value })}
                   placeholder="e.g. Aryan Sharma"
                   className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-medium text-slate-300 mb-1">
-                  Registered Mobile Number <span className="text-slate-500 text-[10px]">(For secure identity recovery)</span>
-                </label>
-                <input
-                  type="text"
-                  maxLength={10}
-                  value={activationForm.phone || ''}
-                  onChange={e => setActivationForm({ ...activationForm, phone: e.target.value.replace(/\D/g, '') })}
-                  placeholder="10-digit phone number"
-                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 font-mono"
                 />
               </div>
 
@@ -435,25 +396,38 @@ export default function Login() {
               </div>
             </form>
           ) : isResetting ? (
-            /* VIEW 3: ZERO-COST REGISTERED CONTACT DATABASE VERIFICATION */
+            /* VIEW 3: OPTION 2 - PHYSICAL LAB IN-CHARGE AUTHORIZATION PROTOCOL */
             <form onSubmit={handleResetPassword} className="space-y-4">
               <div className="border-b border-slate-800 pb-3 mb-2">
                 <div className="flex items-center justify-between">
                   <h3 className="text-sm font-semibold text-white flex items-center gap-2">
                     <KeyRound className="w-4 h-4 text-blue-400" />
-                    Reset {role === 'teacher' ? 'Faculty' : 'Student'} Password
+                    {role === 'teacher' ? 'Faculty Credential Recovery' : 'Lab Authorization Password Reset'}
                   </h3>
                   <span className="inline-flex items-center gap-1 text-[10px] font-medium text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2 py-0.5 rounded-full">
-                    <ShieldCheck className="w-3 h-3 text-blue-400" />
-                    Database Verified
+                    <Lock className="w-3 h-3 text-blue-400" />
+                    Lab Custody Protocol
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-400 mt-1">
                   {role === 'teacher'
-                    ? 'Verify using your institutional email and registered phone digits or Faculty Key.'
-                    : 'Classmates cannot reset your credentials using roll number alone. Verification requires your registered mobile digits.'}
+                    ? 'Verify with your institutional faculty email and Department Security Key.'
+                    : 'To prevent unauthorized hardware requisition tampering, student resets require Lab In-Charge authorization.'}
                 </p>
               </div>
+
+              {/* Lab Security Policy Notice (Option 2) */}
+              {role === 'student' && (
+                <div className="p-3 bg-blue-950/40 border border-blue-500/30 rounded-xl text-slate-300 text-xs space-y-1">
+                  <div className="flex items-center gap-1.5 font-semibold text-blue-400">
+                    <Building2 className="w-4 h-4 text-blue-400" />
+                    IoT Lab In-Charge Protocol (Room B2-105)
+                  </div>
+                  <p className="text-[11px] text-slate-400 leading-relaxed">
+                    Arbitrary online self-service resets are disabled for student security. If you forgot your password, contact <strong className="text-slate-200">Prof. Puja Acharya</strong> to issue a 6-digit One-Time Lab Passcode or reset your account in the Faculty Portal.
+                  </p>
+                </div>
+              )}
 
               {/* Identifier Input */}
               <div>
@@ -467,46 +441,30 @@ export default function Login() {
                   placeholder={role === 'teacher' ? 'e.g. puja.acharya@iilm.edu' : 'e.g. 2481006 or 2581008'}
                   className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 font-mono"
                 />
-
-                {/* Live Verified Identity Badge */}
-                {detectedHint && (
-                  <div className="mt-2 p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-xl flex items-center justify-between text-[11px]">
-                    <div className="flex items-center gap-2 text-slate-300">
-                      <Lock className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                      <span>
-                        Record: <strong className="text-white">{detectedHint.name}</strong>
-                      </span>
-                    </div>
-                    <span className="text-slate-400 font-mono text-[10px] bg-slate-900/60 px-2 py-0.5 rounded border border-slate-700/50">
-                      Phone on file: {detectedHint.maskedPhone}
-                    </span>
-                  </div>
-                )}
               </div>
 
-              {/* Verification Digits Input */}
+              {/* Verification Code Input */}
               <div>
                 <label className="block text-xs font-medium text-slate-300 mb-1">
                   {role === 'teacher'
-                    ? 'Faculty Phone Last 4 Digits or Security Key'
-                    : 'Last 4 Digits of Registered Mobile (or Father’s Mobile)'}
+                    ? 'Department Security Key'
+                    : 'Lab In-Charge Authorization Passcode'}
                 </label>
                 <input
                   type="text"
-                  maxLength={16}
                   value={resetForm.verification}
                   onChange={e => setResetForm({ ...resetForm, verification: e.target.value })}
                   placeholder={
                     role === 'teacher'
-                      ? 'e.g. 0126 or Faculty Key'
-                      : 'Enter last 4 digits (e.g. 6408) or Lab Override Code'
+                      ? 'e.g. IILM@FACULTY2024 or IOT@CSE2024'
+                      : 'e.g. Passcode issued by Lab In-Charge (e.g. LAB-849201)'
                   }
                   className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 font-mono"
                 />
-                <p className="text-[10px] text-slate-400 mt-1 leading-normal">
+                <p className="text-[10px] text-slate-400 mt-1">
                   {role === 'teacher'
-                    ? 'Enter the last 4 digits of your phone registered with IILM or the Lab Department Key.'
-                    : 'Confidential verification: Matches the mobile number submitted during university admission. (Roll number/email alone is insufficient).'}
+                    ? 'Institutional security key maintained by School of Computer Science & Engineering.'
+                    : 'Enter the 6-digit passcode authorized by Prof. Puja Acharya (Room B2-105).'}
                 </p>
               </div>
 
@@ -541,7 +499,6 @@ export default function Login() {
                   onClick={() => {
                     setIsResetting(false);
                     setError('');
-                    setDetectedHint(null);
                   }}
                   className="flex-1 py-2.5 text-xs text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700/80 rounded-xl transition-colors font-medium order-2 sm:order-1 cursor-pointer"
                 >
@@ -553,7 +510,7 @@ export default function Login() {
                   className="flex-1 py-2.5 text-xs text-white bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold transition-all shadow-lg shadow-blue-600/30 disabled:opacity-50 order-1 sm:order-2 cursor-pointer flex items-center justify-center gap-1.5"
                 >
                   <KeyRound className="w-3.5 h-3.5" />
-                  {loading ? 'Verifying...' : 'Verify & Reset Password'}
+                  {loading ? 'Verifying...' : 'Authorize & Reset Password'}
                 </button>
               </div>
             </form>
@@ -583,7 +540,6 @@ export default function Login() {
                       setIsActivating(false);
                       setError('');
                       setSuccessMsg('');
-                      setDetectedHint(null);
                       setResetForm({
                         identifier: identifier,
                         verification: '',

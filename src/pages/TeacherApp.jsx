@@ -5,12 +5,14 @@ import TeacherDashboard from '../components/teacher/TeacherDashboard';
 import RequestsPanel from '../components/teacher/RequestsPanel';
 import InventoryManager from '../components/teacher/InventoryManager';
 import IssuedItems from '../components/teacher/IssuedItems';
+import StudentCredentialsManager from '../components/teacher/StudentCredentialsManager';
 
 const titles = {
   '/teacher': { title: 'Dashboard', subtitle: 'IoT Lab inventory overview' },
   '/teacher/requests': { title: 'Component Requests', subtitle: 'Review and manage student requests' },
   '/teacher/inventory': { title: 'Inventory Management', subtitle: 'Manage lab components and stock' },
   '/teacher/issued': { title: 'Issued Items', subtitle: 'Track all issued components' },
+  '/teacher/security': { title: 'Student Passwords & Security', subtitle: 'Authorize and manage student lab credentials' },
 };
 
 function PageWrapper({ path, children }) {
@@ -35,6 +37,7 @@ export default function TeacherApp() {
           <Route path="/requests" element={<PageWrapper path="/teacher/requests"><RequestsPanel /></PageWrapper>} />
           <Route path="/inventory" element={<PageWrapper path="/teacher/inventory"><InventoryManager /></PageWrapper>} />
           <Route path="/issued" element={<PageWrapper path="/teacher/issued"><IssuedItems /></PageWrapper>} />
+          <Route path="/security" element={<PageWrapper path="/teacher/security"><StudentCredentialsManager /></PageWrapper>} />
           <Route path="*" element={<Navigate to="" replace />} />
         </Routes>
       </div>
