@@ -127,7 +127,7 @@ export function AuthProvider({ children }) {
       if (!staffMember) {
         return {
           success: false,
-          message: `No faculty record found for "${rawId}". Expected: puja.acharya@iilm.edu, vardaan.pajnoo@iilm.edu, or ramesh.kumar1@iilm.edu`,
+          message: `No faculty account found for "${rawId}". Please check your email or contact lab administration.`,
         };
       }
 
@@ -139,7 +139,7 @@ export function AuthProvider({ children }) {
       if (!isHashMatch && !isAcceptedDefault) {
         return {
           success: false,
-          message: 'Incorrect password. (Initial default: Puja@IILM2025 for Prof. Puja)',
+          message: 'Incorrect password. Please try again or use the Reset Password option below.',
         };
       }
 
@@ -205,7 +205,7 @@ export function AuthProvider({ children }) {
       if (!isHashMatch && !isAcceptedDefault && !isUrnPass) {
         return {
           success: false,
-          message: `Incorrect password for URN ${rawId}. (Default: Student@2581 or your URN)`,
+          message: 'Incorrect password. Please try again or use the Reset Password option below.',
         };
       }
 
@@ -349,6 +349,94 @@ export function AuthProvider({ children }) {
     }
   };
 
+  const resetPassword = async ({ identifier, verification, newPassword, role: targetRole }) => {
+    if (!identifier || !newPassword) {
+      return { success: false, message: 'Please provide all required fields.' };
+    }
+    if (newPassword.length < 4) {
+      return { success: false, message: 'New password must be at least 4 characters long.' };
+    }
+
+    const newHash = await hashPassword(newPassword);
+
+    if (targetRole === 'teacher') {
+      const cleanEmail = String(identifier).trim().toLowerCase();
+      const cleanVerif = String(verification || '').trim().toLowerCase();
+
+      let storedStaff = [];
+      try {
+        storedStaff = JSON.parse(localStorage.getItem(STORAGE_KEY_STAFF) || '[]');
+      } catch {
+        storedStaff = [];
+      }
+
+      const idx = storedStaff.findIndex(s => s.email.toLowerCase() === cleanEmail);
+      if (idx === -1) {
+        return { success: false, message: `No faculty record found for "${identifier}".` };
+      }
+
+      const staffMember = storedStaff[idx];
+      if (cleanVerif) {
+        const nameMatch = staffMember.name.toLowerCase().includes(cleanVerif) || cleanVerif.includes(staffMember.name.toLowerCase());
+        const emailMatch = staffMember.email.toLowerCase() === cleanVerif;
+        if (!nameMatch && !emailMatch) {
+          return { success: false, message: 'Verification failed: Faculty name does not match our records.' };
+        }
+      }
+
+      storedStaff[idx].passwordHash = newHash;
+      storedStaff[idx].customPassword = newPassword;
+      localStorage.setItem(STORAGE_KEY_STAFF, JSON.stringify(storedStaff));
+      return { success: true, message: 'Password has been reset successfully. You can now sign in.' };
+    } else {
+      const cleanURN = String(identifier).trim();
+      const cleanVerif = String(verification || '').trim().toLowerCase();
+
+      let storedStudents = [];
+      try {
+        storedStudents = JSON.parse(localStorage.getItem(STORAGE_KEY_STUDENTS) || '[]');
+      } catch {
+        storedStudents = [];
+      }
+
+      let student = storedStudents.find(s => String(s.urn) === cleanURN);
+      let studentIndex = storedStudents.findIndex(s => String(s.urn) === cleanURN);
+
+      if (!student) {
+        const pre = initialStudents.find(s => String(s.urn) === cleanURN);
+        if (pre) {
+          student = {
+            ...pre,
+            rollNo: pre.urn,
+            passwordHash: newHash,
+            activated: true,
+          };
+          storedStudents.push(student);
+          studentIndex = storedStudents.length - 1;
+        }
+      }
+
+      if (!student || studentIndex === -1) {
+        return { success: false, message: `No student record found for URN ${cleanURN}.` };
+      }
+
+      if (cleanVerif) {
+        const sEmail = (student.email || '').toLowerCase();
+        const sName = (student.name || '').toLowerCase();
+        const emailMatch = sEmail.includes(cleanVerif) || cleanVerif.includes(sEmail);
+        const nameMatch = sName.includes(cleanVerif) || cleanVerif.includes(sName);
+        if (!emailMatch && !nameMatch) {
+          return { success: false, message: 'Verification failed: Registered email or student name does not match.' };
+        }
+      }
+
+      storedStudents[studentIndex].passwordHash = newHash;
+      storedStudents[studentIndex].customPassword = newPassword;
+      localStorage.setItem(STORAGE_KEY_STUDENTS, JSON.stringify(storedStudents));
+      return { success: true, message: 'Password has been reset successfully. You can now sign in.' };
+    }
+  };
+
   const logout = () => {
     setUser(null);
     setRole(null);
@@ -364,6 +452,7 @@ export function AuthProvider({ children }) {
         login,
         activateStudent,
         changePassword,
+        resetPassword,
         logout,
       }}
     >

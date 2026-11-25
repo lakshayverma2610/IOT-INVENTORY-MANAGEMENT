@@ -17,6 +17,7 @@ const COURSES = [
 export default function Login() {
   const [role, setRole] = useState('student'); // 'student' | 'teacher'
   const [isActivating, setIsActivating] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
 
   // Sign In States
   const [identifier, setIdentifier] = useState('');
@@ -34,11 +35,19 @@ export default function Login() {
     confirmPassword: '',
   });
 
+  // Password Reset States
+  const [resetForm, setResetForm] = useState({
+    identifier: '',
+    verification: '',
+    newPassword: '',
+    confirmPassword: '',
+  });
+
   const [error, setError] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const { login, activateStudent } = useAuth();
+  const { login, activateStudent, resetPassword } = useAuth();
   const navigate = useNavigate();
 
   // Smart input change handler (auto-switches role if email is typed)
@@ -47,6 +56,57 @@ export default function Login() {
     setError('');
     if (val.includes('@') && role !== 'teacher') {
       setRole('teacher');
+    }
+  };
+
+  const handleResetPassword = async (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+    setError('');
+    setSuccessMsg('');
+
+    const id = (resetForm.identifier || '').trim();
+    const verif = (resetForm.verification || '').trim();
+    const newPass = (resetForm.newPassword || '').trim();
+    const confirmPass = (resetForm.confirmPassword || '').trim();
+
+    if (!id) {
+      setError(role === 'teacher' ? 'Please enter your faculty email.' : 'Please enter your 7-digit URN.');
+      return;
+    }
+    if (!verif) {
+      setError(role === 'teacher' ? 'Please enter your faculty name for verification.' : 'Please enter your registered student name or email.');
+      return;
+    }
+    if (!newPass || newPass.length < 4) {
+      setError('New password must be at least 4 characters long.');
+      return;
+    }
+    if (newPass !== confirmPass) {
+      setError('Passwords do not match. Please re-enter.');
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const res = await resetPassword({
+        identifier: id,
+        verification: verif,
+        newPassword: newPass,
+        role,
+      });
+      setLoading(false);
+      if (res.success) {
+        setSuccessMsg(res.message || 'Password reset successfully! You can now sign in.');
+        setIsResetting(false);
+        setPassword('');
+        setIdentifier(id);
+        setResetForm({ identifier: '', verification: '', newPassword: '', confirmPassword: '' });
+      } else {
+        setError(res.message);
+      }
+    } catch {
+      setLoading(false);
+      setError('Failed to reset password. Please check your credentials.');
     }
   };
 
@@ -153,6 +213,7 @@ export default function Login() {
               onClick={() => {
                 setRole('student');
                 setIsActivating(false);
+                setIsResetting(false);
                 setError('');
               }}
               className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
@@ -169,6 +230,7 @@ export default function Login() {
               onClick={() => {
                 setRole('teacher');
                 setIsActivating(false);
+                setIsResetting(false);
                 setError('');
               }}
               className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
@@ -311,6 +373,90 @@ export default function Login() {
                 </button>
               </div>
             </form>
+          ) : isResetting ? (
+            /* VIEW 3: RESET PASSWORD FORM (FOR BOTH STUDENTS & TEACHERS) */
+            <form onSubmit={handleResetPassword} className="space-y-4">
+              <div className="border-b border-slate-800 pb-3 mb-2">
+                <h3 className="text-sm font-semibold text-white flex items-center gap-2">
+                  <KeyRound className="w-4 h-4 text-blue-400" />
+                  Reset {role === 'teacher' ? 'Faculty' : 'Student'} Password
+                </h3>
+                <p className="text-[11px] text-slate-400 mt-0.5">
+                  {role === 'teacher'
+                    ? 'Enter your institutional email and full name to configure a new password.'
+                    : 'Enter your 7-digit URN and registered name or email to configure a new password.'}
+                </p>
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-slate-300 mb-1">
+                  {role === 'teacher' ? 'Institutional Faculty Email' : '7-Digit URN (Roll Number)'}
+                </label>
+                <input
+                  type="text"
+                  value={resetForm.identifier}
+                  onChange={e => setResetForm({ ...resetForm, identifier: e.target.value })}
+                  placeholder={role === 'teacher' ? 'e.g. puja.acharya@iilm.edu' : 'e.g. 2481006 or 2581008'}
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-slate-300 mb-1">
+                  {role === 'teacher' ? 'Faculty Full Name (Identity Verification)' : 'Registered Student Name or Email (Verification)'}
+                </label>
+                <input
+                  type="text"
+                  value={resetForm.verification}
+                  onChange={e => setResetForm({ ...resetForm, verification: e.target.value })}
+                  placeholder={role === 'teacher' ? 'e.g. Puja Acharya' : 'e.g. Raunak Kumar or student@iilm.edu'}
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                <div>
+                  <label className="block text-xs font-medium text-slate-300 mb-1">New Password</label>
+                  <input
+                    type="password"
+                    value={resetForm.newPassword}
+                    onChange={e => setResetForm({ ...resetForm, newPassword: e.target.value })}
+                    placeholder="Min 4 characters"
+                    className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-slate-300 mb-1">Confirm New Password</label>
+                  <input
+                    type="password"
+                    value={resetForm.confirmPassword}
+                    onChange={e => setResetForm({ ...resetForm, confirmPassword: e.target.value })}
+                    placeholder="Repeat password"
+                    className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-blue-500"
+                  />
+                </div>
+              </div>
+
+              <div className="pt-2 flex flex-col sm:flex-row gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsResetting(false);
+                    setError('');
+                  }}
+                  className="flex-1 py-2.5 text-xs text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700/80 rounded-xl transition-colors font-medium order-2 sm:order-1 cursor-pointer"
+                >
+                  Back to Sign In
+                </button>
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="flex-1 py-2.5 text-xs text-white bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold transition-all shadow-lg shadow-blue-600/30 disabled:opacity-50 order-1 sm:order-2 cursor-pointer"
+                >
+                  {loading ? 'Resetting...' : 'Update & Save Password'}
+                </button>
+              </div>
+            </form>
           ) : (
             /* VIEW 2: STANDARD SIGN IN FORM */
             <form onSubmit={handleSignIn} className="space-y-4">
@@ -328,7 +474,27 @@ export default function Login() {
               </div>
 
               <div>
-                <label className="block text-xs font-medium text-slate-300 mb-1.5">Password</label>
+                <div className="flex justify-between items-center mb-1.5">
+                  <label className="block text-xs font-medium text-slate-300">Password</label>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsResetting(true);
+                      setIsActivating(false);
+                      setError('');
+                      setSuccessMsg('');
+                      setResetForm({
+                        identifier: identifier,
+                        verification: '',
+                        newPassword: '',
+                        confirmPassword: '',
+                      });
+                    }}
+                    className="text-[11px] text-blue-400 hover:text-blue-300 hover:underline cursor-pointer"
+                  >
+                    Forgot / Reset Password?
+                  </button>
+                </div>
                 <div className="relative">
                   <input
                     type={showPass ? 'text' : 'password'}
@@ -344,22 +510,6 @@ export default function Login() {
                   >
                     {showPass ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                   </button>
-                </div>
-
-                {/* Helpful Credential Note */}
-                <div className="mt-2 text-[11px] text-slate-400 flex items-start gap-1.5 bg-slate-800/60 p-2.5 rounded-lg border border-slate-700/40">
-                  <Info className="w-3.5 h-3.5 text-blue-400 mt-0.5 flex-shrink-0" />
-                  <div>
-                    {role === 'teacher' ? (
-                      <span>
-                        Default passwords: <span className="text-blue-300 font-mono font-medium">Puja@IILM2025</span> (or Vardaan@IILM2025 / Ramesh@IILM2025)
-                      </span>
-                    ) : (
-                      <span>
-                        Default password: <span className="text-blue-300 font-mono font-medium">Student@2581</span> or your 7-digit URN
-                      </span>
-                    )}
-                  </div>
                 </div>
               </div>
 
