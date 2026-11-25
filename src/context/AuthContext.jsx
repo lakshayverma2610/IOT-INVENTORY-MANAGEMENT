@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { initialStudents, staffAccounts } from '../data/mockData';
-import { hashPassword, isValidURN, isValidEmail } from '../utils/security';
+import { hashPassword, isValidURN } from '../utils/security';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
 const AuthContext = createContext(null);
@@ -9,7 +9,7 @@ const STORAGE_KEY_STUDENTS = 'iilm_iot_students_v5';
 const STORAGE_KEY_STAFF = 'iilm_iot_staff_v5';
 const STORAGE_KEY_SESSION = 'iilm_iot_session_v5';
 
-// Known accepted initial passwords for faculty accounts
+// Accepted initial passwords for faculty accounts
 const ACCEPTED_STAFF_PASSWORDS = {
   'puja.acharya@iilm.edu': ['Puja@IILM2025', 'puja123', 'iilm123', 'teacher123', '123456'],
   'vardaan.pajnoo@iilm.edu': ['Vardaan@IILM2025', 'vardaan123', 'iilm123', '123456'],
@@ -19,17 +19,14 @@ const ACCEPTED_STAFF_PASSWORDS = {
   'anurag.jain@iilm.edu': ['Anurag@IILM2025', 'anurag123', 'iilm123', 'teacher123', '123456'],
 };
 
-// Master Faculty / Department Security Keys for administrative reset
+// Department Security Keys for administrative resets (Room B2-105)
 const FACULTY_SECURITY_KEYS = ['IILM@FACULTY2024', 'IOT@CSE2024', 'IILM@B2105', 'LAB@INCHARGE'];
 
-// Lab In-Charge Override Security Passcodes (for students who lost phone access)
+// Lab In-Charge Physical Override Passcodes (issued by Prof. Puja Acharya if a student loses phone access)
 const LAB_OVERRIDE_KEYS = ['IOT-LAB-SECURE', 'IILM@LAB2024', 'PUJA@IOT2024', '2024LAB'];
 
 // Accepted default passwords for sample students
 const ACCEPTED_STUDENT_PASSWORDS = ['Student@2581', 'Student@2481', 'student123', '123456', 'iilm123'];
-
-// In-memory OTP simulation cache: { [identifier]: { code: string, expires: number } }
-const otpCache = {};
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -367,7 +364,7 @@ export function AuthProvider({ children }) {
     }
   };
 
-  // Look up masked hint for identity verification without exposing full number
+  // Masked hint from university records
   const getMaskedHint = (identifier, targetRole) => {
     const rawId = String(identifier || '').trim();
     if (!rawId) return null;
@@ -384,7 +381,7 @@ export function AuthProvider({ children }) {
       if (!staff) return null;
       return {
         name: staff.name,
-        maskedPhone: staff.phoneLast4 ? `•••••• ${staff.phoneLast4}` : 'Registered Faculty Phone',
+        maskedPhone: staff.phoneLast4 ? `•••••• ${staff.phoneLast4}` : 'Registered Phone',
       };
     } else {
       if (!/^\d{7}$/.test(rawId)) return null;
@@ -409,40 +406,8 @@ export function AuthProvider({ children }) {
     }
   };
 
-  // Generate a simulated 6-digit verification OTP (valid 10 minutes)
-  const requestResetOtp = async (identifier, targetRole) => {
-    const rawId = String(identifier || '').trim();
-    if (!rawId) {
-      return { success: false, message: 'Please enter your Roll Number (URN) or Faculty Email first.' };
-    }
-
-    const hint = getMaskedHint(rawId, targetRole);
-    if (!hint) {
-      return {
-        success: false,
-        message: targetRole === 'teacher'
-          ? `No faculty record found for "${rawId}".`
-          : `No student record found for URN ${rawId}.`,
-      };
-    }
-
-    // Generate random 6-digit OTP
-    const otpCode = Math.floor(100000 + Math.random() * 900000).toString();
-    const key = rawId.toLowerCase();
-    otpCache[key] = {
-      code: otpCode,
-      expires: Date.now() + 10 * 60 * 1000, // 10 minutes
-    };
-
-    return {
-      success: true,
-      code: otpCode,
-      maskedPhone: hint.maskedPhone,
-      message: `OTP [ ${otpCode} ] dispatched to registered phone (${hint.maskedPhone}). Valid for 10 minutes.`,
-    };
-  };
-
-  // Secure Password Reset Logic
+  // ZERO-COST, ZERO-SMS SECURE DATABASE VERIFICATION
+  // Uses confidential university records (registered mobile last 4 digits) or Lab In-Charge override.
   const resetPassword = async ({ identifier, verification, newPassword, role: targetRole }) => {
     const rawId = String(identifier || '').trim();
     const cleanVerif = String(verification || '').trim();
@@ -455,9 +420,6 @@ export function AuthProvider({ children }) {
     }
 
     const newHash = await hashPassword(newPassword);
-    const key = rawId.toLowerCase();
-    const activeOtp = otpCache[key];
-    const isOtpValid = activeOtp && activeOtp.code === cleanVerif && Date.now() < activeOtp.expires;
 
     if (targetRole === 'teacher') {
       const cleanEmail = rawId.toLowerCase();
@@ -492,23 +454,21 @@ export function AuthProvider({ children }) {
       const isPhoneMatch = cleanDigits.length === 4 && cleanDigits === p4;
       const isKeyMatch = FACULTY_SECURITY_KEYS.some(k => k.toLowerCase() === cleanVerif.toLowerCase());
 
-      if (!isPhoneMatch && !isOtpValid && !isKeyMatch) {
+      if (!isPhoneMatch && !isKeyMatch) {
         return {
           success: false,
-          message: 'Verification failed: Please enter the last 4 digits of your registered phone, valid SMS OTP, or Faculty Security Key.',
+          message: 'Verification failed: Please enter the last 4 digits of your phone registered with the university or Faculty Key.',
         };
       }
 
       storedStaff[idx].passwordHash = newHash;
       storedStaff[idx].customPassword = newPassword;
       localStorage.setItem(STORAGE_KEY_STAFF, JSON.stringify(storedStaff));
-      delete otpCache[key];
       return { success: true, message: 'Faculty password has been reset successfully. You can now sign in.' };
     } else {
       // STUDENT RESET LOGIC:
-      // STRICT SECURITY: We DO NOT allow matching just student name or college email,
-      // because classmates easily know each other's URN, names, and emails!
-      // Must match registered mobile last 4 digits, father's mobile last 4 digits, active OTP, or Lab Override Code.
+      // Peer-proof: Checks confidential registered phone digits from university records.
+      // Classmates only know URN and email; they DO NOT know private phone digits.
       const cleanURN = rawId;
 
       if (!isValidURN(cleanURN)) {
@@ -553,21 +513,20 @@ export function AuthProvider({ children }) {
       const isParentPhoneMatch = parentP4 && cleanDigits.length === 4 && cleanDigits === parentP4;
       const isLabOverride = LAB_OVERRIDE_KEYS.some(k => k.toLowerCase() === cleanVerif.toLowerCase());
 
-      if (!isStudentPhoneMatch && !isParentPhoneMatch && !isOtpValid && !isLabOverride) {
+      if (!isStudentPhoneMatch && !isParentPhoneMatch && !isLabOverride) {
         return {
           success: false,
-          message: 'Security Verification Failed: The digits entered do not match the registered phone number in IILM records. Classmates cannot reset accounts using roll number alone. Please enter your registered mobile digits, request an OTP, or visit Lab In-Charge (B2-105).',
+          message: 'Security Verification Failed: The digits entered do not match the registered phone number in IILM records. Classmates cannot reset your account using roll number or name alone.',
         };
       }
 
       storedStudents[studentIndex].passwordHash = newHash;
       storedStudents[studentIndex].customPassword = newPassword;
       localStorage.setItem(STORAGE_KEY_STUDENTS, JSON.stringify(storedStudents));
-      delete otpCache[key];
 
       return {
         success: true,
-        message: 'Password reset verified successfully! You can now sign in with your new password.',
+        message: 'Identity verified successfully! Your password has been reset. You can now sign in.',
       };
     }
   };
@@ -589,7 +548,6 @@ export function AuthProvider({ children }) {
         changePassword,
         resetPassword,
         getMaskedHint,
-        requestResetOtp,
         logout,
       }}
     >
