@@ -1,7 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Cpu, Eye, EyeOff, GraduationCap, ShieldCheck, ArrowRight, UserCheck, KeyRound, Info } from 'lucide-react';
+import {
+  Cpu,
+  Eye,
+  EyeOff,
+  GraduationCap,
+  ShieldCheck,
+  ArrowRight,
+  UserCheck,
+  KeyRound,
+  Smartphone,
+  CheckCircle2,
+  AlertCircle,
+  RefreshCw,
+  Lock,
+} from 'lucide-react';
 import { isValidURN } from '../utils/security';
 
 const COURSES = [
@@ -28,8 +42,9 @@ export default function Login() {
   const [activationForm, setActivationForm] = useState({
     urn: '',
     name: '',
+    phone: '',
     course: 'B.Tech CSE',
-    semester: 5,
+    semester: 1,
     section: 'A',
     password: '',
     confirmPassword: '',
@@ -43,11 +58,16 @@ export default function Login() {
     confirmPassword: '',
   });
 
+  // Dynamic Identity Hint and OTP Simulation States
+  const [detectedHint, setDetectedHint] = useState(null);
+  const [otpInfo, setOtpInfo] = useState(null);
+  const [otpLoading, setOtpLoading] = useState(false);
+
   const [error, setError] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const { login, activateStudent, resetPassword } = useAuth();
+  const { login, activateStudent, resetPassword, getMaskedHint, requestResetOtp } = useAuth();
   const navigate = useNavigate();
 
   // Smart input change handler (auto-switches role if email is typed)
@@ -56,6 +76,57 @@ export default function Login() {
     setError('');
     if (val.includes('@') && role !== 'teacher') {
       setRole('teacher');
+    }
+  };
+
+  // Check identity hint when user types their URN or email in reset form
+  useEffect(() => {
+    if (!isResetting) {
+      setDetectedHint(null);
+      setOtpInfo(null);
+      return;
+    }
+
+    const rawId = (resetForm.identifier || '').trim();
+    if (role === 'student' && /^\d{7}$/.test(rawId)) {
+      const hint = getMaskedHint(rawId, 'student');
+      setDetectedHint(hint);
+    } else if (role === 'teacher' && rawId.includes('@')) {
+      const hint = getMaskedHint(rawId, 'teacher');
+      setDetectedHint(hint);
+    } else {
+      setDetectedHint(null);
+    }
+  }, [resetForm.identifier, role, isResetting]);
+
+  // Request SMS OTP (Simulation for lab demo & student recovery)
+  const handleRequestOtp = async () => {
+    const rawId = (resetForm.identifier || '').trim();
+    if (!rawId) {
+      setError(role === 'teacher' ? 'Please enter your faculty email first.' : 'Please enter your 7-digit URN first.');
+      return;
+    }
+
+    setError('');
+    setOtpLoading(true);
+
+    try {
+      const res = await requestResetOtp(rawId, role);
+      setOtpLoading(false);
+      if (res.success) {
+        setOtpInfo({
+          code: res.code,
+          phone: res.maskedPhone,
+          message: res.message,
+        });
+        // Auto-fill verification with the generated OTP for convenience in demo/lab testing
+        setResetForm(prev => ({ ...prev, verification: res.code }));
+      } else {
+        setError(res.message);
+      }
+    } catch {
+      setOtpLoading(false);
+      setError('Failed to dispatch verification code. Please check your URN.');
     }
   };
 
@@ -74,7 +145,11 @@ export default function Login() {
       return;
     }
     if (!verif) {
-      setError(role === 'teacher' ? 'Please enter your faculty name for verification.' : 'Please enter your registered student name or email.');
+      setError(
+        role === 'teacher'
+          ? 'Please enter the last 4 digits of your registered phone, SMS OTP, or Faculty Security Key.'
+          : 'Please enter the last 4 digits of your registered mobile number or active SMS OTP.'
+      );
       return;
     }
     if (!newPass || newPass.length < 4) {
@@ -101,12 +176,14 @@ export default function Login() {
         setPassword('');
         setIdentifier(id);
         setResetForm({ identifier: '', verification: '', newPassword: '', confirmPassword: '' });
+        setOtpInfo(null);
+        setDetectedHint(null);
       } else {
         setError(res.message);
       }
     } catch {
       setLoading(false);
-      setError('Failed to reset password. Please check your credentials.');
+      setError('Failed to reset password. Please check your verification digits.');
     }
   };
 
@@ -128,21 +205,24 @@ export default function Login() {
     }
 
     setLoading(true);
-
     try {
       const result = await login(trimmedId, trimmedPass, role);
       setLoading(false);
+
       if (result.success) {
-        navigate(trimmedId.includes('@') || role === 'teacher' ? '/teacher' : '/student');
+        navigate(role === 'teacher' ? '/teacher' : '/student');
       } else {
-        setError(result.message);
         if (result.notActivated) {
+          setError(result.message);
+          setIsActivating(true);
           setActivationForm(prev => ({ ...prev, urn: trimmedId }));
+        } else {
+          setError(result.message || 'Invalid credentials. Please verify your inputs.');
         }
       }
-    } catch (err) {
+    } catch {
       setLoading(false);
-      setError('An error occurred during authentication. Please try again.');
+      setError('Authentication failed. Please verify your inputs.');
     }
   };
 
@@ -151,8 +231,8 @@ export default function Login() {
     setError('');
     setSuccessMsg('');
 
-    const trimmedURN = String(activationForm.urn || '').trim();
-    if (!isValidURN(trimmedURN)) {
+    const cleanURN = String(activationForm.urn || '').trim();
+    if (!isValidURN(cleanURN)) {
       setError('URN must be exactly 7 digits (e.g. 2581008).');
       return;
     }
@@ -178,7 +258,7 @@ export default function Login() {
       } else {
         setError(result.message);
       }
-    } catch (err) {
+    } catch {
       setLoading(false);
       setError('Failed to activate account. Please check your inputs.');
     }
@@ -215,6 +295,8 @@ export default function Login() {
                 setIsActivating(false);
                 setIsResetting(false);
                 setError('');
+                setOtpInfo(null);
+                setDetectedHint(null);
               }}
               className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                 role === 'student'
@@ -232,6 +314,8 @@ export default function Login() {
                 setIsActivating(false);
                 setIsResetting(false);
                 setError('');
+                setOtpInfo(null);
+                setDetectedHint(null);
               }}
               className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
                 role === 'teacher'
@@ -246,15 +330,17 @@ export default function Login() {
 
           {/* Error Banner */}
           {error && (
-            <div className="mb-5 bg-red-500/10 border border-red-500/30 rounded-xl p-3 text-red-400 text-xs leading-relaxed">
-              {error}
+            <div className="mb-5 bg-red-500/10 border border-red-500/30 rounded-xl p-3 text-red-400 text-xs leading-relaxed flex items-start gap-2">
+              <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+              <span>{error}</span>
             </div>
           )}
 
           {/* Success Banner */}
           {successMsg && (
-            <div className="mb-5 bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-3 text-emerald-400 text-xs">
-              {successMsg}
+            <div className="mb-5 bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-3 text-emerald-400 text-xs flex items-start gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <span>{successMsg}</span>
             </div>
           )}
 
@@ -293,6 +379,20 @@ export default function Login() {
                   onChange={e => setActivationForm({ ...activationForm, name: e.target.value })}
                   placeholder="e.g. Aryan Sharma"
                   className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-slate-300 mb-1">
+                  Registered Mobile Number <span className="text-slate-500 text-[10px]">(For secure self-recovery)</span>
+                </label>
+                <input
+                  type="text"
+                  maxLength={10}
+                  value={activationForm.phone || ''}
+                  onChange={e => setActivationForm({ ...activationForm, phone: e.target.value.replace(/\D/g, '') })}
+                  placeholder="10-digit phone number"
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 font-mono"
                 />
               </div>
 
@@ -374,20 +474,27 @@ export default function Login() {
               </div>
             </form>
           ) : isResetting ? (
-            /* VIEW 3: RESET PASSWORD FORM (FOR BOTH STUDENTS & TEACHERS) */
+            /* VIEW 3: SECURE MULTI-FACTOR RESET PASSWORD FORM */
             <form onSubmit={handleResetPassword} className="space-y-4">
               <div className="border-b border-slate-800 pb-3 mb-2">
-                <h3 className="text-sm font-semibold text-white flex items-center gap-2">
-                  <KeyRound className="w-4 h-4 text-blue-400" />
-                  Reset {role === 'teacher' ? 'Faculty' : 'Student'} Password
-                </h3>
-                <p className="text-[11px] text-slate-400 mt-0.5">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-semibold text-white flex items-center gap-2">
+                    <KeyRound className="w-4 h-4 text-blue-400" />
+                    Reset {role === 'teacher' ? 'Faculty' : 'Student'} Password
+                  </h3>
+                  <span className="inline-flex items-center gap-1 text-[10px] font-medium text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2 py-0.5 rounded-full">
+                    <ShieldCheck className="w-3 h-3 text-blue-400" />
+                    High Security
+                  </span>
+                </div>
+                <p className="text-[11px] text-slate-400 mt-1">
                   {role === 'teacher'
-                    ? 'Enter your institutional email and full name to configure a new password.'
-                    : 'Enter your 7-digit URN and registered name or email to configure a new password.'}
+                    ? 'Verify using your institutional email and confidential mobile digits or Faculty Key.'
+                    : 'Classmates cannot reset accounts using roll number alone. Verification requires your registered mobile digits or SMS OTP.'}
                 </p>
               </div>
 
+              {/* Identifier Input */}
               <div>
                 <label className="block text-xs font-medium text-slate-300 mb-1">
                   {role === 'teacher' ? 'Institutional Faculty Email' : '7-Digit URN (Roll Number)'}
@@ -397,23 +504,93 @@ export default function Login() {
                   value={resetForm.identifier}
                   onChange={e => setResetForm({ ...resetForm, identifier: e.target.value })}
                   placeholder={role === 'teacher' ? 'e.g. puja.acharya@iilm.edu' : 'e.g. 2481006 or 2581008'}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500"
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 font-mono"
                 />
+
+                {/* Live Verified Identity Badge */}
+                {detectedHint && (
+                  <div className="mt-2 p-2 bg-slate-800/60 border border-slate-700/60 rounded-xl flex items-center justify-between text-[11px]">
+                    <div className="flex items-center gap-2 text-slate-300">
+                      <Lock className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>
+                        Verified: <strong className="text-white">{detectedHint.name}</strong>
+                      </span>
+                    </div>
+                    <span className="text-slate-400 font-mono">
+                      Mobile: {detectedHint.maskedPhone}
+                    </span>
+                  </div>
+                )}
               </div>
 
+              {/* OTP Simulation Alert Box */}
+              {otpInfo && (
+                <div className="bg-blue-950/60 border border-blue-500/40 rounded-xl p-3 text-blue-300 text-xs">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="font-semibold text-white flex items-center gap-1.5">
+                      <Smartphone className="w-3.5 h-3.5 text-blue-400" />
+                      Simulated SMS Dispatch
+                    </span>
+                    <span className="font-mono text-[10px] text-blue-400 bg-blue-500/20 px-2 py-0.5 rounded">
+                      Lab Mode
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-slate-300">
+                    Verification code for {detectedHint?.name || 'account'} is{' '}
+                    <strong className="text-white font-mono bg-blue-500/30 px-1.5 py-0.5 rounded border border-blue-400/40">
+                      {otpInfo.code}
+                    </strong>
+                    . Valid for 10 minutes.
+                  </p>
+                </div>
+              )}
+
+              {/* Verification Digits / OTP Input */}
               <div>
-                <label className="block text-xs font-medium text-slate-300 mb-1">
-                  {role === 'teacher' ? 'Faculty Full Name (Identity Verification)' : 'Registered Student Name or Email (Verification)'}
-                </label>
+                <div className="flex justify-between items-center mb-1">
+                  <label className="block text-xs font-medium text-slate-300">
+                    {role === 'teacher'
+                      ? 'Phone Last 4 Digits or Faculty Key'
+                      : 'Last 4 Digits of Registered Phone (or OTP)'}
+                  </label>
+                  <button
+                    type="button"
+                    onClick={handleRequestOtp}
+                    disabled={otpLoading}
+                    className="text-[11px] text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1 hover:underline cursor-pointer disabled:opacity-50"
+                  >
+                    {otpLoading ? (
+                      <>
+                        <RefreshCw className="w-3 h-3 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Smartphone className="w-3 h-3" />
+                        Send SMS OTP
+                      </>
+                    )}
+                  </button>
+                </div>
                 <input
                   type="text"
                   value={resetForm.verification}
                   onChange={e => setResetForm({ ...resetForm, verification: e.target.value })}
-                  placeholder={role === 'teacher' ? 'e.g. Puja Acharya' : 'e.g. Raunak Kumar or student@iilm.edu'}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500"
+                  placeholder={
+                    role === 'teacher'
+                      ? 'e.g. 0126 or Faculty Key'
+                      : 'e.g. Last 4 phone digits (e.g. 6408) or 6-digit OTP'
+                  }
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 font-mono"
                 />
+                <p className="text-[10px] text-slate-400 mt-1 leading-normal">
+                  {role === 'teacher'
+                    ? 'Enter the last 4 digits of your phone registered in university records, active SMS OTP, or department key.'
+                    : 'Protected verification: Enter the last 4 digits of your mobile (or father’s mobile) on file with IILM.'}
+                </p>
               </div>
 
+              {/* New Password Fields */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                 <div>
                   <label className="block text-xs font-medium text-slate-300 mb-1">New Password</label>
@@ -437,12 +614,15 @@ export default function Login() {
                 </div>
               </div>
 
+              {/* Action Buttons */}
               <div className="pt-2 flex flex-col sm:flex-row gap-2">
                 <button
                   type="button"
                   onClick={() => {
                     setIsResetting(false);
                     setError('');
+                    setOtpInfo(null);
+                    setDetectedHint(null);
                   }}
                   className="flex-1 py-2.5 text-xs text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700/80 rounded-xl transition-colors font-medium order-2 sm:order-1 cursor-pointer"
                 >
@@ -451,9 +631,10 @@ export default function Login() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="flex-1 py-2.5 text-xs text-white bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold transition-all shadow-lg shadow-blue-600/30 disabled:opacity-50 order-1 sm:order-2 cursor-pointer"
+                  className="flex-1 py-2.5 text-xs text-white bg-blue-600 hover:bg-blue-700 rounded-xl font-semibold transition-all shadow-lg shadow-blue-600/30 disabled:opacity-50 order-1 sm:order-2 cursor-pointer flex items-center justify-center gap-1.5"
                 >
-                  {loading ? 'Resetting...' : 'Update & Save Password'}
+                  <KeyRound className="w-3.5 h-3.5" />
+                  {loading ? 'Verifying...' : 'Verify & Reset Password'}
                 </button>
               </div>
             </form>
@@ -469,7 +650,7 @@ export default function Login() {
                   value={identifier}
                   onChange={e => handleIdentifierChange(e.target.value)}
                   placeholder={role === 'student' ? 'Enter 7-digit URN (e.g. 2581008)' : 'puja.acharya@iilm.edu'}
-                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors"
+                  className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors font-mono"
                 />
               </div>
 
@@ -483,6 +664,8 @@ export default function Login() {
                       setIsActivating(false);
                       setError('');
                       setSuccessMsg('');
+                      setOtpInfo(null);
+                      setDetectedHint(null);
                       setResetForm({
                         identifier: identifier,
                         verification: '',

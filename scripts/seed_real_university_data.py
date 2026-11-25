@@ -40,8 +40,22 @@ def clean_urn(v):
 
 def clean_text(v):
     if not v: return ''
-    # remove leading/trailing quotes and newlines
     return str(v).strip().strip('"').strip("'").strip()
+
+def clean_phone_last4(v):
+    if not v: return ''
+    v_str = str(v).strip()
+    try:
+        f = float(v_str)
+        s = f'{int(f):010d}'
+        if len(s) >= 4:
+            return s[-4:]
+    except:
+        pass
+    digits = re.sub(r'\D', '', v_str)
+    if len(digits) >= 4:
+        return digits[-4:]
+    return ''
 
 with zipfile.ZipFile(xlsx_path, 'r') as z:
     sst = []
@@ -110,6 +124,11 @@ for r in sheet11_rows[2:]:
     if urn in students:
         if r.get('D') and '@' in r.get('D'):
             students[urn]['email'] = clean_text(r.get('D'))
+        p4 = clean_phone_last4(r.get('E'))
+        if p4:
+            students[urn]['phoneLast4'] = p4
+        if r.get('F') and '@' in r.get('F'):
+            students[urn]['parentEmail'] = clean_text(r.get('F'))
 
 # 2. Parse 2025-29 (1st Year) from Sheet 3 (Section data: A to G)
 sec_map_cols = [
@@ -140,47 +159,47 @@ for r in sheet3_rows[4:]:
                 'batch': '2025-29'
             }
 
-# Add any missing 2025-29 students from Sheet 2
+# Add any missing 2025-29 students from Sheet 2 and attach phone numbers
 for r in sheet2_rows[3:]:
     urn = clean_urn(r.get('B', ''))
     name = clean_text(r.get('D', ''))
-    if urn.startswith('2581') and name and urn not in students:
-        email = clean_text(r.get('K', '')) or f'{urn}@iilm.edu'
-        students[urn] = {
-            'id': f'stu-{urn}',
-            'urn': urn,
-            'name': name,
-            'email': email,
-            'course': 'B.Tech CSE',
-            'semester': 1,
-            'section': 'General',
-            'batch': '2025-29'
-        }
+    p4 = clean_phone_last4(r.get('G'))
+    fp4 = clean_phone_last4(r.get('H'))
+    p_email = clean_text(r.get('I', ''))
+    pers_email = clean_text(r.get('J', ''))
+    off_email = clean_text(r.get('K', ''))
 
-# 3. Parse Faculty Coordinators from Sheet 6
-coordinators = []
-staff_id_counter = 1
-for r in sheet6_rows[1:]:
-    c_name = clean_text(r.get('C', ''))
-    c_email = clean_text(r.get('E', ''))
-    c_prog = clean_text(r.get('A', ''))
-    c_sec = clean_text(r.get('B', ''))
-    if c_name and c_email:
-        # handle multiple emails if separated by /
-        primary_email = c_email.split('/')[0].strip()
-        coordinators.append({
-            'id': f'staff-{staff_id_counter}',
-            'name': c_name,
-            'email': primary_email,
-            'designation': f'Coordinator ({c_prog} Sec {c_sec})',
-            'department': 'School of Computer Science & Engineering'
-        })
-        staff_id_counter += 1
+    if urn.startswith('2581'):
+        if urn not in students and name:
+            students[urn] = {
+                'id': f'stu-{urn}',
+                'urn': urn,
+                'name': name,
+                'email': off_email or f'{urn}@iilm.edu',
+                'course': 'B.Tech CSE',
+                'semester': 1,
+                'section': 'General',
+                'batch': '2025-29'
+            }
+        if urn in students:
+            if p4:
+                students[urn]['phoneLast4'] = p4
+            if fp4:
+                students[urn]['parentPhoneLast4'] = fp4
+            if p_email and '@' in p_email:
+                students[urn]['parentEmail'] = p_email
+            if pers_email and '@' in pers_email:
+                students[urn]['personalEmail'] = pers_email
+
+# Ensure every student has a phoneLast4 (fallback to last 4 digits of URN if none registered)
+for urn, s in students.items():
+    if 'phoneLast4' not in s or not s['phoneLast4']:
+        s['phoneLast4'] = urn[-4:]
 
 print(f"Total Unique Students Loaded: {len(students)}")
 print(f"- Batch 2024-28 (2nd Year, Sem 3): {sum(1 for s in students.values() if s['batch'] == '2024-28')}")
 print(f"- Batch 2025-29 (1st Year, Sem 1): {sum(1 for s in students.values() if s['batch'] == '2025-29')}")
-print(f"Total Coordinators/Staff: {len(coordinators)}")
+print(f"- Students with phoneLast4: {sum(1 for s in students.values() if 'phoneLast4' in s)}")
 
 # Sort students by URN
 sorted_students = sorted(list(students.values()), key=lambda s: s['urn'])
